@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ape-nft/static/css/main.f55e7232.css",
+    "main.js": "/ape-nft/static/js/main.3546a57a.js",
+    "index.html": "/ape-nft/index.html",
+    "main.f55e7232.css.map": "/ape-nft/static/css/main.f55e7232.css.map",
+    "main.3546a57a.js.map": "/ape-nft/static/js/main.3546a57a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f55e7232.css",
+    "static/js/main.3546a57a.js"
+  ]
+}
