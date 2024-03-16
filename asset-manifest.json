@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.2776ca60.css",
-    "main.js": "/ape-nft/static/js/main.b7a9b7de.js",
+    "main.css": "/ape-nft/static/css/main.39f9dc8b.css",
+    "main.js": "/ape-nft/static/js/main.00dc28c0.js",
     "static/media/BiroScriptUSPlus-Regular.eot": "/ape-nft/static/media/BiroScriptUSPlus-Regular.e8f8cf1acd88757b0f7f.eot",
     "static/media/BiroScriptUSPlus-Regular.ttf": "/ape-nft/static/media/BiroScriptUSPlus-Regular.c2eb85c7d374dcb860f4.ttf",
     "static/media/BiroScriptUSPlus-Regular.woff": "/ape-nft/static/media/BiroScriptUSPlus-Regular.4483a20e730fc372f0c6.woff",
@@ -15,12 +15,15 @@
     "static/media/MessinaSansMono-Regular.woff2": "/ape-nft/static/media/MessinaSansMono-Regular.19feb1851352756f781c.woff2",
     "static/media/MessinaSansMono-SemiBold.woff2": "/ape-nft/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
     "static/media/logoMain.svg": "/ape-nft/static/media/logoMain.e3870d9c5e3279c243233e11947d161b.svg",
+    "static/media/logoOpenSea.svg": "/ape-nft/static/media/logoOpenSea.9fe32d8ef7265c06199e0613adc6948a.svg",
+    "static/media/discord.svg": "/ape-nft/static/media/discord.88581dcf1b2760e65e3fc5e214248eca.svg",
     "index.html": "/ape-nft/index.html",
-    "main.2776ca60.css.map": "/ape-nft/static/css/main.2776ca60.css.map",
-    "main.b7a9b7de.js.map": "/ape-nft/static/js/main.b7a9b7de.js.map"
+    "static/media/logoX.svg": "/ape-nft/static/media/logoX.1129677938bfc80d12ad84d24c66eaac.svg",
+    "main.39f9dc8b.css.map": "/ape-nft/static/css/main.39f9dc8b.css.map",
+    "main.00dc28c0.js.map": "/ape-nft/static/js/main.00dc28c0.js.map"
   },
   "entrypoints": [
-    "static/css/main.2776ca60.css",
-    "static/js/main.b7a9b7de.js"
+    "static/css/main.39f9dc8b.css",
+    "static/js/main.00dc28c0.js"
   ]
 }
