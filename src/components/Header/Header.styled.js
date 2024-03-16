@@ -4,12 +4,14 @@ import { variables } from '../../stylesheet/variables';
 
 export const Header = styled.header`
   display: flex;
+  //   align-items: start;
+  justify-content: space-between;
 
   //   grid-template-columns: 1fr 1fr;
 
   //   height: 150px;
 
-  padding: 21px 75px;
+  padding: 21px 8px;
 
   background-color: ${variables.colors.bgSecondary};
 `;

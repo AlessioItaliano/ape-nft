@@ -12,9 +12,6 @@ export const Footer = styled.footer`
   // width: 100%;
   padding: 24px 0 30px 0;
 
-  // box-shadow: 0 -4px 4px ${variables.colors.boxShadow};
-  // border-radius: 12px 12px 0 0;
-
   background-color: ${variables.colors.bgMain};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
@@ -26,17 +23,12 @@ export const Footer = styled.footer`
 `;
 
 export const CopyRight = styled.p`
-  color: ${variables.colors.secondary};
   font-size: 10px;
   line-height: 1.71;
+  font-weight: 400;
 
-  color: #fff;
+  color: ${variables.colors.secondary};
 
   text-align: center;
-  font-family: 'Messina Sans Mono';
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 14px;
   text-transform: uppercase;
 `;

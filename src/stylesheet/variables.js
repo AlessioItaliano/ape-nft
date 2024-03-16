@@ -19,4 +19,10 @@ export const variables = {
     tablet: '768px',
     desktop: '1280px',
   },
+
+  fonts: {
+    messina: 'Messina Sans Mono',
+    grotesk: 'Right Grotesk',
+    biro: 'Biro Script Plus',
+  },
 };
