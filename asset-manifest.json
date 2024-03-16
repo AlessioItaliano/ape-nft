@@ -1,13 +1,26 @@
 {
   "files": {
-    "main.css": "/ape-nft/static/css/main.f55e7232.css",
-    "main.js": "/ape-nft/static/js/main.3546a57a.js",
+    "main.css": "/ape-nft/static/css/main.2776ca60.css",
+    "main.js": "/ape-nft/static/js/main.b7a9b7de.js",
+    "static/media/BiroScriptUSPlus-Regular.eot": "/ape-nft/static/media/BiroScriptUSPlus-Regular.e8f8cf1acd88757b0f7f.eot",
+    "static/media/BiroScriptUSPlus-Regular.ttf": "/ape-nft/static/media/BiroScriptUSPlus-Regular.c2eb85c7d374dcb860f4.ttf",
+    "static/media/BiroScriptUSPlus-Regular.woff": "/ape-nft/static/media/BiroScriptUSPlus-Regular.4483a20e730fc372f0c6.woff",
+    "static/media/BiroScriptUSPlus-Regular.woff2": "/ape-nft/static/media/BiroScriptUSPlus-Regular.09a0a6bf591bcbe1f332.woff2",
+    "static/media/RightGrotesk-CompactBlack.otf": "/ape-nft/static/media/RightGrotesk-CompactBlack.965367bf710f347153cc.otf",
+    "static/media/MessinaSansMono-Regular.eot": "/ape-nft/static/media/MessinaSansMono-Regular.3a4f461eac12ca313ab7.eot",
+    "static/media/MessinaSansMono-Regular.ttf": "/ape-nft/static/media/MessinaSansMono-Regular.b289391c577f8fd447dd.ttf",
+    "static/media/MessinaSansMono-SemiBold.eot": "/ape-nft/static/media/MessinaSansMono-SemiBold.84f9efad1accc034fbd7.eot",
+    "static/media/MessinaSansMono-SemiBold.ttf": "/ape-nft/static/media/MessinaSansMono-SemiBold.79c44c973c9e739c9ad4.ttf",
+    "static/media/MessinaSansMono-SemiBold.woff": "/ape-nft/static/media/MessinaSansMono-SemiBold.c0ee0f01ae315fe0d3c9.woff",
+    "static/media/MessinaSansMono-Regular.woff2": "/ape-nft/static/media/MessinaSansMono-Regular.19feb1851352756f781c.woff2",
+    "static/media/MessinaSansMono-SemiBold.woff2": "/ape-nft/static/media/MessinaSansMono-SemiBold.c212b64fe491bf9fb5ad.woff2",
+    "static/media/logoMain.svg": "/ape-nft/static/media/logoMain.e3870d9c5e3279c243233e11947d161b.svg",
     "index.html": "/ape-nft/index.html",
-    "main.f55e7232.css.map": "/ape-nft/static/css/main.f55e7232.css.map",
-    "main.3546a57a.js.map": "/ape-nft/static/js/main.3546a57a.js.map"
+    "main.2776ca60.css.map": "/ape-nft/static/css/main.2776ca60.css.map",
+    "main.b7a9b7de.js.map": "/ape-nft/static/js/main.b7a9b7de.js.map"
   },
   "entrypoints": [
-    "static/css/main.f55e7232.css",
-    "static/js/main.3546a57a.js"
+    "static/css/main.2776ca60.css",
+    "static/js/main.b7a9b7de.js"
   ]
 }
