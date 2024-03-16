@@ -5,7 +5,7 @@ import { variables } from 'stylesheet/variables';
 export const Section = styled.section`
   padding: 30px 0;
 
-  background-color: ${variables.colors.bgMain};
+  // background-color: ${variables.colors.bgMain};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     padding: 40px 0;

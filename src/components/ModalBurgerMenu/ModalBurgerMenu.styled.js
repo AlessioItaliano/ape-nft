@@ -9,6 +9,7 @@ export const Field = styled.div`
   position: absolute;
   display: flex;
   flex-direction: column;
+  z-index: 1000;
 
   top: 0;
   right: 0;
@@ -49,8 +50,10 @@ export const CloseButton = styled.button`
 
 export const Logo = styled.a`
   display: flex;
-  width: 50px;
-  height: auto;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
   gap: 5px;
 
   margin-bottom: 30px;

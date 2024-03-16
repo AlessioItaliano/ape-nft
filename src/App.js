@@ -4,14 +4,19 @@ import Header from 'components/Header';
 import Section from 'components/Section';
 import Footer from 'components/Footer';
 import Hero from 'components/Hero';
+import AboutUs from 'components/AboutUs';
+import Container from 'components/Container';
 
 const App = () => {
   return (
     <>
       <Header />
       <Hero />
-      <Section anhorId="mint">
-        <p>mint</p>
+
+      <Section anhorId="about">
+        <Container>
+          <AboutUs />
+        </Container>
       </Section>
       <Section anhorId="arts">
         <p>faq</p>
@@ -19,7 +24,7 @@ const App = () => {
       <Section anhorId="m-map">
         <p>about</p>
       </Section>
-      <Section anhorId="about">
+      <Section anhorId="aboutd">
         <p>Ciao</p>
       </Section>
       <Footer />

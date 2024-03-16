@@ -2,6 +2,9 @@
 
 body {
   margin: 0;
+
+  background-color: #181818;
+
   font-style: normal;
   font-size: 12px;
   line-height: 1.16em;
@@ -105,33 +108,41 @@ a {
 
 /* ===================== FONTS ===================== */
 
-/* Biro Script Plus - 400 */
+/* Biro Script Plus US Bold - 700 */
 @font-face {
+  font-display: swap;
   font-family: 'Biro Script Plus';
   font-style: normal;
-  font-weight: 400;
-  src: url('../assets/fonts/BiroScriptUSPlus/BiroScriptUSPlus-Regular.eot');
-  src: local('Biro Script Plus Regular'),
-    url('../assets/fonts/BiroScriptUSPlus/BiroScriptUSPlus-Regular.woff2')
+  font-weight: 700;
+  src: url('../assets/fonts/BiroScriptUSPlus/BiroScriptPlus-Bold.eot');
+  src: local('Biro Script Plus US Bold'),
+    url('../assets/fonts/BiroScriptUSPlus/BiroScriptPlus-Bold.woff2')
       format('woff2'),
-    url('../assets/fonts/BiroScriptUSPlus/BiroScriptUSPlus-Regular.woff')
+    url('../assets/fonts/BiroScriptUSPlus/BiroScriptPlus-Bold.woff')
       format('woff'),
-    url('../assets/fonts/BiroScriptUSPlus/BiroScriptUSPlus-Regular.ttf')
+    url('../assets/fonts/BiroScriptUSPlus/BiroScriptPlus-Bold.ttf')
       format('truetype');
 }
 
 /* Right Grotesk - 900 */
 @font-face {
+  font-display: swap;
   font-family: 'Right Grotesk';
   font-style: normal;
   font-weight: 900;
-  src: local('Messina Sans Mono Regular'),
-    url('../assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.otf')
-      format('opentype');
+  src: url('../assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.eot');
+  src: local('Right Grotesk'),
+    url('../assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.woff2')
+      format('woff2'),
+    url('../assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.woff')
+      format('woff'),
+    url('../assets/fonts/RightGrotesk/RightGrotesk-CompactBlack.ttf')
+      format('truetype');
 }
 
 /* Messina Sans Mono - 400 */
 @font-face {
+  font-display: swap;
   font-family: 'Messina Sans Mono';
   font-style: normal;
   font-weight: 400;
@@ -147,6 +158,7 @@ a {
 
 /* Messina Sans Mono - 600 */
 @font-face {
+  font-display: swap;
   font-family: 'Messina Sans Mono';
   font-style: normal;
   font-weight: 600;

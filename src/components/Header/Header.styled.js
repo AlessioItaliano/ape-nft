@@ -4,20 +4,24 @@ import { variables } from '../../stylesheet/variables';
 
 export const Header = styled.header`
   display: flex;
-  //   align-items: start;
   justify-content: space-between;
 
-  //   grid-template-columns: 1fr 1fr;
+  position: absolute;
+  z-index: 100;
 
-  //   height: 150px;
+  height: auto;
+  width: 100%;
 
-  padding: 21px 8px;
+  padding: 8px 16px;
 
-  background-color: ${variables.colors.bgSecondary};
+  background-color: transparent;
 `;
 
 export const Logo = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 48px;
-  height: 32px;
+  height: 48px;
   color: ${variables.colors.whiteText};
 `;
