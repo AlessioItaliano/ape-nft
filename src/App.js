@@ -7,6 +7,7 @@ import Hero from 'components/Hero';
 import AboutUs from 'components/AboutUs';
 import Container from 'components/Container';
 import Banner from 'components/Banner';
+import MindMap from 'components/MindMap';
 
 const App = () => {
   return (
@@ -20,13 +21,17 @@ const App = () => {
         </Container>
         <Banner />
       </Section>
-      <Section anhorId="arts">
-        <p>faq</p>
-      </Section>
+
       <Section anhorId="m-map">
+        <Container>
+          <MindMap />
+        </Container>
+      </Section>
+
+      <Section anhorId="m-maecececp">
         <p>about</p>
       </Section>
-      <Section anhorId="aboutd">
+      <Section anhorId="abouecectd">
         <p>Ciao</p>
       </Section>
       <Footer />

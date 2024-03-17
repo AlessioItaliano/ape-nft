@@ -10,6 +10,7 @@ export const Banner = styled.div`
 `;
 
 export const BannerText = styled.div`
+  scroll-behavior: smooth;
   display: flex;
   align-items: center;
   justify-content: center;

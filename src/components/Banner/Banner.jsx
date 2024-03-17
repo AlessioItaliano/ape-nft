@@ -8,7 +8,7 @@ const Banner = () => {
   useEffect(() => {
     anime({
       targets: '#bannerText',
-      translateX: ['-100%', '100%'],
+      translateX: ['-60%', '60%'],
       duration: 20000,
       easing: 'linear',
       loop: true,
@@ -18,7 +18,11 @@ const Banner = () => {
   return (
     <s.Banner>
       <s.BannerText id="bannerText">
-        Destroy stereotypes{' '}
+        <s.IconContainer>
+          {' '}
+          <CloseIcon />
+        </s.IconContainer>{' '}
+        Destroy stereotypes
         <s.IconContainer>
           {' '}
           <CloseIcon />
