@@ -6,6 +6,7 @@ import Footer from 'components/Footer';
 import Hero from 'components/Hero';
 import AboutUs from 'components/AboutUs';
 import Container from 'components/Container';
+import Banner from 'components/Banner';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Container>
           <AboutUs />
         </Container>
+        <Banner />
       </Section>
       <Section anhorId="arts">
         <p>faq</p>
