@@ -1,13 +1,16 @@
 import React, { useRef } from 'react';
 
+import { Navigation } from 'swiper/modules';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 
+import { ReactComponent as ArrowIcon } from '../../icons/arrow-top-right.svg';
+
 import * as s from './Slider.styled';
+// import MindMapItem from 'components/MindMapItem';
 
-import { Navigation } from 'swiper/modules';
-
-const Slider = () => {
+const Slider = ({ wrapper }) => {
   const swiperRef = useRef(null);
 
   const goNext = () => {
@@ -30,17 +33,43 @@ const Slider = () => {
           nextEl: '.swiper-button-next',
         }}
         modules={[Navigation]}
-        // spaceBetween={50}
         slidesPerView={1}
+        centeredSlidesBounds={true}
       >
-        <s.Item>Slide 1</s.Item>
-        <s.Item>Slide 2</s.Item>
-        <s.Item>Slide 3</s.Item>
-        <s.Item>Slide 4</s.Item>
-        <s.Item>Slide 5</s.Item>
+        <s.Item>
+          <s.ItemDescription>
+            All owners of APE NFTs and all future collections will receive a
+            percentage of sales based on the number of NFTs they own
+          </s.ItemDescription>
+          <s.ItemTitle>YAPE DROP</s.ItemTitle>
+        </s.Item>
+        <s.Item>
+          <s.ItemDescription>
+            Launch of the 2nd YACHT Collection Releasing the first version of
+            the Ape Slam Game
+          </s.ItemDescription>
+          <s.ItemTitle>New Collection</s.ItemTitle>
+        </s.Item>
+        <s.Item>
+          <s.ItemDescription>
+            Launch your own token, the proceeds of which will go to a global
+            fund to LAUNCH YACHT CLUB AND PROMOTE it
+          </s.ItemDescription>
+          <s.ItemTitle>Token</s.ItemTitle>
+        </s.Item>
+        <s.ItemRed>
+          <s.ArrowIconLink href="https://www.binance.com/uk-UA">
+            {/* <s.ArrowIconContainer> */}
+            <ArrowIcon />
+            {/* </s.ArrowIconContainer> */}
+          </s.ArrowIconLink>
+          <s.ItemTitle>Learn more in mind map</s.ItemTitle>
+        </s.ItemRed>
       </s.Slider>
-      <s.Prev onClick={goPrev}>Prev</s.Prev>
-      <s.Next onClick={goNext}>Next</s.Next>
+      <s.SliderButtonContainer>
+        <s.SliderButton onClick={goPrev}>Prev</s.SliderButton>
+        <s.SliderButton onClick={goNext}>Next</s.SliderButton>
+      </s.SliderButtonContainer>
     </>
   );
 };
