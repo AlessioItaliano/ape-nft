@@ -1,16 +1,14 @@
 import React, { useRef } from 'react';
 
 import { Navigation } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { ReactComponent as ArrowIcon } from '../../icons/arrow-top-right.svg';
 
-import * as s from './Slider.styled';
-// import MindMapItem from 'components/MindMapItem';
+import * as s from './MindMapSlider.styled';
 
-const Slider = ({ wrapper }) => {
+const MindMapSlider = () => {
   const swiperRef = useRef(null);
 
   const goNext = () => {
@@ -59,9 +57,7 @@ const Slider = ({ wrapper }) => {
         </s.Item>
         <s.ItemRed>
           <s.ArrowIconLink href="https://www.binance.com/uk-UA">
-            {/* <s.ArrowIconContainer> */}
             <ArrowIcon />
-            {/* </s.ArrowIconContainer> */}
           </s.ArrowIconLink>
           <s.ItemTitle>Learn more in mind map</s.ItemTitle>
         </s.ItemRed>
@@ -74,4 +70,4 @@ const Slider = ({ wrapper }) => {
   );
 };
 
-export default Slider;
+export default MindMapSlider;
