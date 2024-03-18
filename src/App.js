@@ -17,30 +17,30 @@ const App = () => {
       <Header />
       <Hero />
 
-      <Section anhorId="about">
+      <Section id="about">
         <Container>
           <AboutUs />
         </Container>
         <Banner />
       </Section>
 
-      <Section anhorId="m-map">
+      <Section id="m-map">
         <Container>
           <MindMap />
         </Container>
       </Section>
 
-      <Section anhorId="faq">
+      <Section id="faq">
         <p>about</p>
       </Section>
 
-      <Section anhorId="arts">
+      <Section id="arts">
         <Container>
           <Collection />
         </Container>
       </Section>
 
-      <Section anhorId="mint">
+      <Section id="mint">
         <Container>
           <Mint />
         </Container>

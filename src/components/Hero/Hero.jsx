@@ -1,4 +1,3 @@
-import ButtonOpacity from 'components/ButtonOpacity';
 import * as s from './Hero.styled';
 
 const Hero = () => {
@@ -10,7 +9,7 @@ const Hero = () => {
         <s.Title>Apes aRe eveRywhere</s.Title>
       </s.TitleContainer>
       <s.DescriptionContainer>
-        <ButtonOpacity type={'button'} name={'Meet apes'} href="#mint" />
+        <s.HeroButton href="#mint">Meet apes</s.HeroButton>
         <s.Description>
           Yacht Ape is a collection of unique digital apes that you can own in
           NFT format

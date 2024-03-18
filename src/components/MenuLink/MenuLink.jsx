@@ -11,19 +11,25 @@ const MenuLink = () => {
         href="https://discord.com/"
         aria-label="Visit company discord page"
       >
-        <DiscordIcon />
+        <s.Box>
+          <DiscordIcon />
+        </s.Box>
       </s.Link>
       <s.Link
         href="https://opensea.io/"
         aria-label="Visit company opensea page"
       >
-        <OpenSeaIcon />
+        <s.Box>
+          <OpenSeaIcon />
+        </s.Box>
       </s.Link>
       <s.Link
         href="https://twitter.com/"
         aria-label="Visit company twitter page"
       >
-        <XIcon />
+        <s.Box>
+          <XIcon />
+        </s.Box>
       </s.Link>
     </s.Container>
   );

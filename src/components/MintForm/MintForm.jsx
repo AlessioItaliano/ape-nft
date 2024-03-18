@@ -13,10 +13,13 @@ import * as s from './MintForm.styled';
 
 const MintForm = () => {
   const handleSubmit = (values, { resetForm }) => {
+    const user = values.username.trim().replace('@', '');
+    const wallet = values.walletAddress.trim();
+
     Report.success(
-      `Dear ${values.username}`,
+      `Dear ${user}`,
       `Welcome to the community of like-minded individuals!
-NFTs will soon be credited to your account ${values.walletAddress} `,
+NFTs will soon be credited to your account ${wallet} `,
       'Okay',
       () => {
         resetForm();

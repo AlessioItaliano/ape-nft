@@ -30,3 +30,8 @@ export const Link = styled.a`
     fill: ${variables.colors.whiteText};
   }
 `;
+
+export const Box = styled.div`
+  width: 16px;
+  height: 16px;
+`;

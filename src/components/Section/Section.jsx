@@ -1,7 +1,5 @@
 import * as s from './Section.styled';
 
-const Section = ({ children, anhorId }) => (
-  <s.Section id={anhorId}>{children}</s.Section>
-);
+const Section = ({ children, id }) => <s.Section id={id}>{children}</s.Section>;
 
 export default Section;
