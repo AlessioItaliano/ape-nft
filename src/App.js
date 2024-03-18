@@ -9,6 +9,7 @@ import Container from 'components/Container';
 import Banner from 'components/Banner';
 import MindMap from 'components/MindMap';
 import Collection from 'components/Colection/Collection';
+import Mint from 'components/Mint';
 
 const App = () => {
   return (
@@ -40,7 +41,9 @@ const App = () => {
       </Section>
 
       <Section anhorId="mint">
-        <p>Ciao</p>
+        <Container>
+          <Mint />
+        </Container>
       </Section>
       <Footer />
     </>

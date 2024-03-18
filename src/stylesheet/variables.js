@@ -5,6 +5,7 @@ export const variables = {
     redText: '#DC3B5A',
 
     secondary: '#5A65F2',
+    placeholder: 'rgba(255, 255, 255, 0.24)',
 
     bgMain: '#181818',
     bgSecondary: '#DC3B5A',
