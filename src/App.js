@@ -8,8 +8,9 @@ import AboutUs from 'components/AboutUs';
 import Container from 'components/Container';
 import Banner from 'components/Banner';
 import MindMap from 'components/MindMap';
-import Collection from 'components/Colection/Collection';
+import Collection from 'components/Colection';
 import Mint from 'components/Mint';
+import Faq from 'components/Faq';
 
 const App = () => {
   return (
@@ -31,7 +32,9 @@ const App = () => {
       </Section>
 
       <Section id="faq">
-        <p>about</p>
+        <Container>
+          <Faq />
+        </Container>
       </Section>
 
       <Section id="arts">
@@ -51,9 +54,3 @@ const App = () => {
 };
 
 export default App;
-
-// <s.Link href="#mint">Mint</s.Link>
-// <s.Link href="#arts">Arts</s.Link>
-// <s.Link href="#faq">Faq</s.Link>
-// <s.Link href="#m-map">M-Map</s.Link>
-// <s.Link href="#about">About</s.Link>

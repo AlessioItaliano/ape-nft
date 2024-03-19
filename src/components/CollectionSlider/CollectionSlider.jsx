@@ -33,7 +33,7 @@ const CollectionSlider = () => {
         modules={[Navigation]}
         slidesPerView={1}
         centeredSlidesBounds={true}
-        loop={true}
+        // loop={true}
       >
         {imagesMobile.map((image, index) => (
           <s.Item key={index}>

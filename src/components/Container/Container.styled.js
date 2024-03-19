@@ -7,7 +7,8 @@ export const Container = styled.div`
   padding-right: 72px;
   margin-right: auto;
   margin-left: auto;
-  max-width: 767px;
+  min-width: ${variables.breakpoints.mobileMin};
+  max-width: ${variables.breakpoints.mobileMax};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     min-width: 768px;
