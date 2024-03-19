@@ -9,20 +9,37 @@ import mainHeroDesktop2x from '../../images/appImages/hero-ape-desktop-2x.png';
 
 import { variables } from '../../stylesheet/variables';
 
-export const Container = styled.div`
+export const SectionHero = styled.div`
+  padding: 54px 0 30px 0;
+  margin-right: 8px;
+  margin-left: 8px;
+  // position: relative;
+  // z-index: 90;
+`;
+
+export const ContainerHero = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-content: space-between;
 
-  position: relative;
-  z-index: 90;
+  // position: relative;
+  // z-index: 90;
 
   height: 542px;
-  // width: 100%;
+  padding: 36px 64px 19px 64px;
+  margin-right: auto;
+  margin-left: auto;
+  min-width: ${variables.breakpoints.mobileMin};
+  max-width: ${variables.breakpoints.mobileMax};
 
-  padding: 36px 75px 19px 75px;
-  margin: 0 8px 30px 8px;
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    max-width: 1280px;
+  }
+
   border-radius: 12px;
 
   background-color: ${variables.colors.bgSecondary};
@@ -59,6 +76,14 @@ export const Container = styled.div`
     }
   }
 `;
+// export const MainContainer = styled.div`
+//   height: 500px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   // flex-wrap: wrap;
+//   align-content: space-between;
+// `;
 
 export const TitleContainer = styled.div`
   display: flex;
@@ -105,9 +130,8 @@ export const Description = styled.p`
   text-align: center;
   text-transform: uppercase;
 
-  width: 213px;
+  // width: 213px;
 `;
-
 
 export const HeroButton = styled.a`
   display: flex;

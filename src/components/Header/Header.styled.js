@@ -12,9 +12,21 @@ export const Header = styled.header`
   height: auto;
   width: 100%;
 
-  padding: 8px 16px;
+  padding: 62px 16px 0 16px;
 
   background-color: transparent;
+
+  margin-right: auto;
+  margin-left: auto;
+  //   min-width: ${variables.breakpoints.mobileMin};
+  max-width: ${variables.breakpoints.mobileMax};
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    min-width: 768px;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    max-width: 1280px;
+  }
 `;
 
 export const Logo = styled.a`
