@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Formik } from 'formik';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 
@@ -12,7 +12,11 @@ import { validationSchema } from './schema.js';
 import * as s from './MintForm.styled';
 
 const MintForm = () => {
+  const [isSubmited, setIsSubmited] = useState(false);
+
   const handleSubmit = (values, { resetForm }) => {
+    console.log(values);
+    setIsSubmited(true);
     const user = values.username.trim().replace('@', '');
     const wallet = values.walletAddress.trim();
 
@@ -23,6 +27,7 @@ NFTs will soon be credited to your account ${wallet} `,
       'Okay',
       () => {
         resetForm();
+        setIsSubmited(false);
       }
     );
   };
@@ -50,7 +55,9 @@ NFTs will soon be credited to your account ${wallet} `,
               placeholder="@username"
               error={errors.username && touched.username ? 'true' : undefined}
             />
-            <s.Error name="username" component="div" />
+            {errors.username && touched.username ? (
+              <s.Error name="username" component="div" />
+            ) : null}
           </s.FieldContainer>
 
           <s.FieldContainer>
@@ -69,10 +76,21 @@ NFTs will soon be credited to your account ${wallet} `,
                   : undefined
               }
             />
-            <s.Error name="walletAddress" component="div" />
+            {errors.walletAddress && touched.walletAddress ? (
+              <s.Error name="walletAddress" component="div" />
+            ) : null}
           </s.FieldContainer>
 
-          <ButtonNormal type="submit" name="Mint" />
+          <ButtonNormal
+            type="submit"
+            name={
+              !isSubmited
+                ? Object.keys(errors).length > 0
+                  ? 'Error'
+                  : 'Mint'
+                : 'MINTED'
+            }
+          />
         </s.Forma>
       )}
     </Formik>

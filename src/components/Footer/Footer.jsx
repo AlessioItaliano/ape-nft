@@ -1,11 +1,12 @@
 import Container from 'components/Container';
 import * as s from './Footer.styled';
+import CopyRight from 'components/CopyRight';
 
 const Footer = () => {
   return (
     <s.Footer>
       <Container>
-        <s.CopyRight>© Yacht ape 2024 all rights reserved</s.CopyRight>
+        <CopyRight />
       </Container>
     </s.Footer>
   );

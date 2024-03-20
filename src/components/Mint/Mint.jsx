@@ -9,18 +9,17 @@ const Mint = () => {
   return (
     <s.Container>
       <Title name="Are you in?" />
+
       <s.DescriptionContainer>
         <s.IconContainer>
           <CloseIcon />
         </s.IconContainer>
-
         <s.Description>
           Join the YACHT APE community to be one of the first to receive our
           limited edition NFT
         </s.Description>
+        <MintForm />
       </s.DescriptionContainer>
-
-      <MintForm />
     </s.Container>
   );
 };

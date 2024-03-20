@@ -30,4 +30,14 @@ export const Button = styled.button`
   &:hover {
     color: ${variables.colors.blackText};
   }
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    padding: 10px 107px 12px 107px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding: 16px 140px 20px 140px;
+    font-size: 28px;
+    line-height: 1.21em;
+  }
 `;

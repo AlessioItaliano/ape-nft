@@ -5,6 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { imagesMobile } from '../../images/nft/images';
+import { variables } from 'stylesheet/variables';
 
 import * as s from './CollectionSlider.styled';
 
@@ -22,6 +23,16 @@ const CollectionSlider = () => {
       swiperRef.current.swiper.slidePrev();
     }
   };
+
+  const breakpoints = {
+    [variables.breakpoints.tablet.slice(0, -2) - 1]: {
+      slidesPerView: 2,
+    },
+    [variables.breakpoints.desktop.slice(0, -2) - 1]: {
+      slidesPerView: 4,
+    },
+  };
+
   return (
     <>
       <s.Slider
@@ -32,23 +43,26 @@ const CollectionSlider = () => {
         }}
         modules={[Navigation]}
         slidesPerView={1}
+        spaceBetween={24}
         centeredSlidesBounds={true}
-        // loop={true}
+        breakpoints={breakpoints}
       >
         {imagesMobile.map((image, index) => (
           <s.Item key={index}>
-            <s.Image
-              srcSet={`${image.mobile1x} 1x, ${image.mobile2x} 2x`}
-              src={image.mobile1x}
-              alt={image.alt}
-            />
+            <s.ImageContainer>
+              <s.Image
+                srcSet={`${image.mobile1x} 1x, ${image.mobile2x} 2x`}
+                src={image.mobile1x}
+                alt={image.alt}
+              />
+            </s.ImageContainer>
           </s.Item>
         ))}
+        <s.SliderButtonContainer>
+          <s.SliderButton onClick={goPrev}>Prev</s.SliderButton>
+          <s.SliderButton onClick={goNext}>Next</s.SliderButton>
+        </s.SliderButtonContainer>
       </s.Slider>
-      <s.SliderButtonContainer>
-        <s.SliderButton onClick={goPrev}>Prev</s.SliderButton>
-        <s.SliderButton onClick={goNext}>Next</s.SliderButton>
-      </s.SliderButtonContainer>
     </>
   );
 };

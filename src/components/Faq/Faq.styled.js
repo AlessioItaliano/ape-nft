@@ -9,74 +9,88 @@ export const Container = styled.div`
   gap: 24px;
 `;
 
-export const IconContainer = styled.div`
-  width: 24px;
-  height: 24px;
-
-  fill: ${variables.colors.whiteText};
-`;
-
-// export const Description = styled.p`
-//   color: ${variables.colors.whiteText};
-
-//   text-align: center;
-//   text-transform: uppercase;
-
-//   width: 213px;
-// `;
-
 export const List = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 8px;
-  // padding: 8px;
 `;
 
 export const Item = styled.li`
-  color: ${variables.colors.whiteText};
-
   display: flex;
-  // justify-content: space-between;
   gap: 8px;
-  // text-align: center;
   padding: 8px;
-
-  // font-family: ${variables.fonts.grotesk};
-  // font-size: 20px;
-  // font-weight: 900;
-  // line-height: 1em;
-  // text-transform: uppercase;
-  counter-increment: list-counter;
-  // margin-left: 40px;
-  // padding-left: 40px;
   position: relative;
 
+  counter-increment: list-counter;
   cursor: pointer;
+
+  color: ${variables.colors.whiteText};
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    padding: 18px 0 16px 185px;
+
+    gap: 21px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding: 24px 15px 24px 250px;
+    gap: 27px;
+  }
 
   &:focus,
   &:hover {
     color: ${variables.colors.redText};
     border-radius: 12px;
     background-color: ${variables.colors.bgTertiary};
-    // padding: 8px;
   }
 
   &::before {
     content: '[ ' counter(list-counter) ' ]  ';
     color: ${variables.colors.redText};
     font-family: ${variables.fonts.biro};
-    font-size: 12px;
-    font-weight: 400;
+    // font-size: 12px;
+    // font-weight: 400;
     line-height: 1.66em;
     white-space: nowrap;
     padding-top: 4px;
+
+    @media screen and (min-width: ${variables.breakpoints.tablet}) {
+      font-size: 16px;
+      line-height: 1.68em;
+      padding-top: 8px;
+    }
+
+    @media screen and (min-width: ${variables.breakpoints.desktop}) {
+      font-size: 24px;
+      line-height: 1.66em;
+      padding-top: 21px;
+    }
   }
 
   &:focus::before,
   &:hover::before {
     color: ${variables.colors.whiteText};
   }
+
+  ${props =>
+    props.isActive &&
+    `
+    color: ${variables.colors.redText};
+    border-radius: 12px;
+    background-color: ${variables.colors.bgTertiary};
+
+        &:before {
+      color: ${variables.colors.whiteText};
+    }
+
+      > ${ItemContainer} > ${DescriptionContainer} > ${Description} {
+      display: block;
+    } 
+          > ${ItemContainer} > ${ImageContainer}  {
+      display: block;
+    } 
+  `}
 `;
 
 export const Main = styled.p`
@@ -85,14 +99,28 @@ export const Main = styled.p`
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    font-size: 32px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 64px;
+  }
 `;
 
 export const DescriptionContainer = styled.div`
   display: flex;
-  // justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 10px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    gap: 12px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    gap: 36px;
+  }
 `;
 
 export const Description = styled.p`
@@ -100,13 +128,45 @@ export const Description = styled.p`
   color: ${variables.colors.whiteText};
 
   font-family: ${variables.fonts.messina};
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.16em;
   text-transform: uppercase;
 
-  ${Item}:hover & {
-    display: block;
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: 1.18em;
   }
+`;
+
+export const ItemContainer = styled.div`
+  display: flex;
+  align-items: center; /* Центрування зображення та тексту по вертикалі */
+  gap: 20px; /* Проміжок між зображенням і текстом */
+`;
+
+export const ImageContainer = styled.div`
+  display: none;
+  border-radius: 16px;
+  overflow: hidden;
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  transform: rotate(-16deg);
+  color: ${variables.colors.redText};
+  border-radius: 12px;
+  background-color: ${variables.colors.bgTertiary};
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    width: auto;
+    height: 183px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: auto;
+    height: 282px;
+  }
+`;
+
+export const Image = styled.img`
+  object-fit: cover;
+  width: 100%; /* Займе всю доступну ширину контейнера */
+  height: 100%;
 `;

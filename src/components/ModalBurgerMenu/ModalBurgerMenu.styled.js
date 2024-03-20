@@ -1,7 +1,4 @@
 import styled from 'styled-components';
-// import { NavLink } from 'react-router-dom';
-
-// import { ReactComponent as CloseIconBtn } from '../../icons/Catalog/x-close.svg';
 
 import { variables } from '../../stylesheet/variables';
 
@@ -15,8 +12,9 @@ export const Field = styled.div`
   right: 0;
   width: 100vw;
   height: 100vh;
+  overflow: hidden;
 
-  padding: 16px;
+  padding: 62px 16px 0 16px;
   //   box-sizing: border-box;
 
   background: ${variables.colors.bgMain};
@@ -130,10 +128,7 @@ export const NavContainer = styled.div`
   gap: 160px;
 `;
 
-export const CopyRight = styled.p`
-  font-weight: 400;
-  text-align: center;
-  text-transform: uppercase;
-
-  color: ${variables.colors.whiteText};
+export const Box = styled.div`
+  width: 16px;
+  height: 16px;
 `;
