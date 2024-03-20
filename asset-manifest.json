@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/ape-nft/static/css/main.0c9016ea.css",
-    "main.js": "/ape-nft/static/js/main.6d3b3c88.js",
+    "main.js": "/ape-nft/static/js/main.261b6607.js",
     "static/media/ape008-desktop-2x.png": "/ape-nft/static/media/ape008-desktop-2x.a0ab3e2880af23aac4b1.png",
     "static/media/ape002-desktop-2x.png": "/ape-nft/static/media/ape002-desktop-2x.61f54a631aed7854b9e1.png",
     "static/media/ape004-desktop-2x.png": "/ape-nft/static/media/ape004-desktop-2x.3c8ea8a47689930708dd.png",
@@ -48,10 +48,12 @@
     "static/media/ape003-mobile-2x.png": "/ape-nft/static/media/ape003-mobile-2x.d862f486a543271ea26b.png",
     "static/media/ape001-mobile-2x.png": "/ape-nft/static/media/ape001-mobile-2x.ee25312597453f04fc65.png",
     "static/media/BiroScriptPlus-Bold.woff": "/ape-nft/static/media/BiroScriptPlus-Bold.f11ef054eaee50b0c1b9.woff",
+    "static/media/ape013-mobile-2x.png": "/ape-nft/static/media/ape013-mobile-2x.822013bb2f36be9f8735.png",
     "static/media/ape011-mobile-2x.png": "/ape-nft/static/media/ape011-mobile-2x.5d3fde07a7e85881e510.png",
     "static/media/ape014-mobile-2x.png": "/ape-nft/static/media/ape014-mobile-2x.46582bf68a25acb6dc45.png",
     "static/media/ape005-mobile-2x.png": "/ape-nft/static/media/ape005-mobile-2x.2a60ac081eab8ed16c4e.png",
     "static/media/ape006-mobile-2x.png": "/ape-nft/static/media/ape006-mobile-2x.2aa3127242ef19d3e73f.png",
+    "static/media/ape007-mobile-2x.png": "/ape-nft/static/media/ape007-mobile-2x.0ac950594f965fd9f708.png",
     "static/media/ape010-mobile-2x.png": "/ape-nft/static/media/ape010-mobile-2x.d39221a7fbfd7a34bbfe.png",
     "static/media/faqApp001-2x.png": "/ape-nft/static/media/faqApp001-2x.40cd7d251c05df81f90a.png",
     "static/media/faqApp003-2x.png": "/ape-nft/static/media/faqApp003-2x.3e2090aa3d9c7592bdd1.png",
@@ -70,13 +72,11 @@
     "static/media/ape001-mobile-1x.png": "/ape-nft/static/media/ape001-mobile-1x.345fdb1428edfe54f983.png",
     "static/media/ape006-mobile-1x.png": "/ape-nft/static/media/ape006-mobile-1x.d2fa7f4b93464ef14cba.png",
     "static/media/ape013-mobile-1x.png": "/ape-nft/static/media/ape013-mobile-1x.73a6525eeb5225f51ca8.png",
-    "static/media/ape013-mobile-2x.png": "/ape-nft/static/media/ape013-mobile-2x.73a6525eeb5225f51ca8.png",
     "static/media/ape011-mobile-1x.png": "/ape-nft/static/media/ape011-mobile-1x.31dbea22ca14499d6c40.png",
     "static/media/hero-ape-mobile-1x.png": "/ape-nft/static/media/hero-ape-mobile-1x.41dca94cd78845ce3583.png",
     "static/media/ape014-mobile-1x.png": "/ape-nft/static/media/ape014-mobile-1x.b5da9a79de562a6f8d8f.png",
     "static/media/ape005-mobile-1x.png": "/ape-nft/static/media/ape005-mobile-1x.e03f9f7c45426481540a.png",
     "static/media/ape007-mobile-1x.png": "/ape-nft/static/media/ape007-mobile-1x.e69967e1dcd3f2ac99f2.png",
-    "static/media/ape007-mobile-2x.png": "/ape-nft/static/media/ape007-mobile-2x.e69967e1dcd3f2ac99f2.png",
     "static/media/ape010-mobile-1x.png": "/ape-nft/static/media/ape010-mobile-1x.84a79c5f20ca4dbad3a0.png",
     "static/media/faqApp001-1x.png": "/ape-nft/static/media/faqApp001-1x.d4bdf2f129a19429de59.png",
     "static/media/RightGrotesk-CompactBlack.ttf": "/ape-nft/static/media/RightGrotesk-CompactBlack.367abab8bd03b3cf68a2.ttf",
@@ -102,10 +102,10 @@
     "static/media/close.svg": "/ape-nft/static/media/close.1b442fa97209d2356d9a484f4bdb3190.svg",
     "static/media/arrow-top-right.svg": "/ape-nft/static/media/arrow-top-right.29e76a0e75acf2a6ae2aa76ce99341ad.svg",
     "main.0c9016ea.css.map": "/ape-nft/static/css/main.0c9016ea.css.map",
-    "main.6d3b3c88.js.map": "/ape-nft/static/js/main.6d3b3c88.js.map"
+    "main.261b6607.js.map": "/ape-nft/static/js/main.261b6607.js.map"
   },
   "entrypoints": [
     "static/css/main.0c9016ea.css",
-    "static/js/main.6d3b3c88.js"
+    "static/js/main.261b6607.js"
   ]
 }
