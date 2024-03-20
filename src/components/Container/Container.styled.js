@@ -13,7 +13,7 @@ export const Container = styled.div`
     min-width: 768px;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    padding: 0 204px;
+    padding: 0 124px;
     max-width: 1280px;
   }
 `;

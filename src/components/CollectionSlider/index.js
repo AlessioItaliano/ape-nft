@@ -1,1 +1,1 @@
-export { default } from './CollectionSlider';
+// export { default } from './CollectionSlider';

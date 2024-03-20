@@ -1,1 +1,1 @@
-export { default } from './MindMapSlider';
+// export { default } from './MindMapSlider';

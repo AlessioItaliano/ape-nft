@@ -7,6 +7,13 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 24px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    gap: 40px;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    gap: 80px;
+  }
 `;
 
 export const List = styled.ul`
@@ -41,29 +48,29 @@ export const Item = styled.li`
   &:focus,
   &:hover {
     color: ${variables.colors.redText};
-    border-radius: 12px;
-    background-color: ${variables.colors.bgTertiary};
   }
 
   &::before {
     content: '[ ' counter(list-counter) ' ]  ';
     color: ${variables.colors.redText};
+
     font-family: ${variables.fonts.biro};
-    // font-size: 12px;
-    // font-weight: 400;
     line-height: 1.66em;
+
     white-space: nowrap;
     padding-top: 4px;
 
     @media screen and (min-width: ${variables.breakpoints.tablet}) {
       font-size: 16px;
       line-height: 1.68em;
+
       padding-top: 8px;
     }
 
     @media screen and (min-width: ${variables.breakpoints.desktop}) {
       font-size: 24px;
       line-height: 1.66em;
+
       padding-top: 21px;
     }
   }
@@ -74,7 +81,7 @@ export const Item = styled.li`
   }
 
   ${props =>
-    props.isActive &&
+    props.$active &&
     `
     color: ${variables.colors.redText};
     border-radius: 12px;
@@ -87,8 +94,9 @@ export const Item = styled.li`
       > ${ItemContainer} > ${DescriptionContainer} > ${Description} {
       display: block;
     } 
-          > ${ItemContainer} > ${ImageContainer}  {
-      display: block;
+      > ${ItemContainer} > ${ImageContainer}  {
+          @media screen and (min-width: ${variables.breakpoints.tablet}) {
+      display: block;}
     } 
   `}
 `;
@@ -138,35 +146,38 @@ export const Description = styled.p`
 
 export const ItemContainer = styled.div`
   display: flex;
-  align-items: center; /* Центрування зображення та тексту по вертикалі */
-  gap: 20px; /* Проміжок між зображенням і текстом */
+  align-items: center;
+  gap: 20px;
 `;
 
 export const ImageContainer = styled.div`
   display: none;
-  border-radius: 16px;
-  overflow: hidden;
-  position: absolute;
-  top: -15px;
-  left: 20px;
-  transform: rotate(-16deg);
-  color: ${variables.colors.redText};
-  border-radius: 12px;
-  background-color: ${variables.colors.bgTertiary};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    position: absolute;
+    z-index: 1000;
+    top: -15px;
+    left: 20px;
+
     width: auto;
     height: 183px;
+
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(-16deg);
+    color: ${variables.colors.redText};
+
+    background-color: ${variables.colors.bgTertiary};
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    width: auto;
+    left: 15px;
     height: 282px;
+    transform: rotate(-8deg);
   }
 `;
 
 export const Image = styled.img`
   object-fit: cover;
-  width: 100%; /* Займе всю доступну ширину контейнера */
   height: 100%;
 `;
