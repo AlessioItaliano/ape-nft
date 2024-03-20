@@ -25,11 +25,11 @@ const MenuNav = () => {
 
   const handleClickOpenNavMenu = () => {
     setIsOpenNavMenu(prevState => !prevState);
-    if (!isOpenNavMenu) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = 'auto';
-    }
+    // if (!isOpenNavMenu) {
+    //   document.body.style.overflow = 'hidden';
+    // } else {
+    //   document.body.style.overflow = 'auto';
+    // }
   };
 
   return (

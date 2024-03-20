@@ -83,8 +83,9 @@ export const Item = styled.li`
   ${props =>
     props.$active &&
     `
-    color: ${variables.colors.redText};
     border-radius: 12px;
+
+    color: ${variables.colors.redText};
     background-color: ${variables.colors.bgTertiary};
 
         &:before {
@@ -96,7 +97,7 @@ export const Item = styled.li`
     } 
       > ${ItemContainer} > ${ImageContainer}  {
           @media screen and (min-width: ${variables.breakpoints.tablet}) {
-      display: block;}
+      display: block;
     } 
   `}
 `;

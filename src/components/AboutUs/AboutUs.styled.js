@@ -43,6 +43,9 @@ export const Container = styled.div`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     background-image: url(${imgTablet1x});
     background-size: 313px 422px;
+    background-position: bottom right;
+    align-items: start;
+    height: auto;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -61,9 +64,26 @@ export const Container = styled.div`
     }
   }
 `;
-export const MainTitleContainer = styled.div`
+export const MainContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  // align-items: center;
   width: 220px;
-  margin-bottom: 16px;
+  gap: 16px;
+  margin-bottom: 36px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    flex-direction: row;
+    // gap: 48px;
+    margin-bottom: 68px;
+    width: auto;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    // gap: 85px;
+    margin-bottom: 56px;
+  }
 `;
 
 export const MainTitle = styled.h2`
@@ -72,10 +92,20 @@ export const MainTitle = styled.h2`
 
   font-weight: 900;
   line-height: 1em;
-  letter-spacing: 0.44px;
+  // letter-spacing: 0.44px;
+  // text-align-last: left;
+
   color: ${variables.colors.whiteText};
 
   text-transform: uppercase;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    font-size: 60px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 120px;
+  }
 `;
 
 export const Span = styled.span`
@@ -84,22 +114,43 @@ export const Span = styled.span`
 
 export const MainDescriptionContainer = styled.div`
   display: flex;
-  justify-content: end;
-  align-items: end;
-  flex-direction: column;
+  // justify-content: end;
+  // align-items: end;
+  // flex-direction: column;
+  // text-align: right;
+  // margin-bottom: 32px;
 
-  margin-bottom: 32px;
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    padding-top: 11px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding-top: 24px;
+  }
 `;
 
 export const MainDescription = styled.p`
   color: ${variables.colors.whiteText};
 
   text-transform: uppercase;
+  direction: rtl;
   text-align: right;
   font-size: 16px;
   line-height: 1.18em;
 
-  width: 213px;
+  // width: 213px;
+  width: 216px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    // gap: 24px;
+    width: 275px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: 409px;
+    font-size: 24px;
+    line-height: 1.2em;
+  }
 `;
 
 export const SecondDescriptionContainer = styled.div`
@@ -108,12 +159,31 @@ export const SecondDescriptionContainer = styled.div`
   align-items: center;
   flex-direction: column;
   gap: 16px;
+  width: 216px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    gap: 24px;
+    width: 269px;
+    margin-bottom: 36px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    gap: 36px;
+    width: 417px;
+    margin-bottom: 40px;
+  }
 `;
+
 export const IconContainer = styled.div`
   width: 24px;
   height: 24px;
 
   fill: ${variables.colors.whiteText};
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: 36px;
+    height: 36px;
+  }
 `;
 
 export const SecondDescription = styled.p`
@@ -122,5 +192,15 @@ export const SecondDescription = styled.p`
   text-align: center;
   text-transform: uppercase;
 
-  width: 213px;
+  // width: 213px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    font-size: 16px;
+    line-height: 1.18em;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: 1.2em;
+  }
 `;

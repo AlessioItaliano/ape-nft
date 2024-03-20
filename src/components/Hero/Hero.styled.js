@@ -68,6 +68,7 @@ export const ContainerHero = styled.div`
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     background-image: url(${mainHeroTablet1x});
+    background-position: bottom center;
     background-size: 283px 386px;
 
     @media (min-device-pixel-ratio: 2),
@@ -111,16 +112,6 @@ export const DescriptionContainer = styled.div`
   gap: 12px;
 `;
 
-export const Title = styled.h3`
-  font-family: ${variables.fonts.biro};
-  font-size: 16px;
-  text-align: right;
-  font-weight: 700;
-  line-height: 1.68em;
-
-  color: ${variables.colors.blackText};
-`;
-
 export const MainTitle = styled.h2`
   font-family: ${variables.fonts.grotesk};
   font-size: 44px;
@@ -133,6 +124,32 @@ export const MainTitle = styled.h2`
   white-space: nowrap;
 
   margin-bottom: 8px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    font-size: 92px;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 164px;
+  }
+`;
+
+export const Title = styled.h3`
+  font-family: ${variables.fonts.biro};
+  font-size: 16px;
+  text-align: right;
+  font-weight: 700;
+  line-height: 1.68em;
+
+  color: ${variables.colors.blackText};
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    font-size: 20px;
+    line-height: 1.65em;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 24px;
+    line-height: 1.66em;
+  }
 `;
 
 export const Description = styled.p`
@@ -142,6 +159,14 @@ export const Description = styled.p`
   text-transform: uppercase;
 
   width: 213px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    text-align: justify;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: 1.18em;
+  }
 `;
 
 export const HeroButton = styled.a`

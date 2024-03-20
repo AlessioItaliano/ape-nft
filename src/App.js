@@ -18,32 +18,32 @@ const App = () => {
       <Header />
       <Hero />
 
-      <Section id="about">
+      <Section anhorId="about">
         <Container>
           <AboutUs />
         </Container>
         <Banner />
       </Section>
 
-      <Section id="m-map">
+      <Section anhorId="m-map">
         <Container>
           <MindMap />
         </Container>
       </Section>
 
-      <Section id="faq">
+      <Section anhorId="faq">
         <Container>
           <Faq />
         </Container>
       </Section>
 
-      <Section id="arts">
+      <Section anhorId="arts">
         <Container>
           <Collection />
         </Container>
       </Section>
 
-      <Section id="mint">
+      <Section anhorId="mint">
         <Container>
           <Mint />
         </Container>
