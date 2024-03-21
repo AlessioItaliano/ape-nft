@@ -13,43 +13,17 @@ export const SectionHero = styled.section`
   padding: 54px 0 30px 0;
   margin: 0 8px;
 
-  // display: flex;
-  // justify-content: center;
-
-  // position: relative;
-  // z-index: 90;
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    margin: 0 16px;
+    padding-bottom: 40px;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding: 0 0 60px 0;
+    margin-top: 16px;
+  }
 `;
 
 export const Background = styled.div`
-  // display: flex;
-  // // justify-content: center;
-  // align-items: center;
-  // justify-content: center;
-
-  // // display: flex;
-  // flex-direction: column;
-  // // justify-content: space-between;
-  // align-content: space-between;
-
-  // position: relative;
-  // z-index: 90;
-
-  // height: 542px;
-  // padding: 36px 0 19px 0;
-  // padding: 36px 64px 19px 64px;
-  // padding: 62px 16px 0 16px;
-  // margin: 0 auto;
-  // min-width: ${variables.breakpoints.mobileMin};
-  // max-width: ${variables.breakpoints.mobileMax};
-
-  // @media screen and (min-width: ${variables.breakpoints.tablet}) {
-  //   padding: 35px 0;
-  // }
-  // @media screen and (min-width: ${variables.breakpoints.desktop}) {
-  //   height: 677px;
-  //   padding: 65px 0 81px 0;
-  // }
-
   border-radius: 12px;
 
   background-color: ${variables.colors.bgSecondary};
@@ -87,6 +61,7 @@ export const Background = styled.div`
     }
   }
 `;
+
 export const ContainerHero = styled.div`
   display: flex;
   justify-content: center;
