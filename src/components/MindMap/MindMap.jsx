@@ -13,7 +13,7 @@ import * as s from './MindMap.styled';
 
 const MindMap = () => {
   const isMobile = useMediaQuery({
-    query: `(max-width: ${variables.breakpoints.tablet})`,
+    query: `(max-width: ${variables.breakpoints.mobileMax})`,
   });
 
   return (

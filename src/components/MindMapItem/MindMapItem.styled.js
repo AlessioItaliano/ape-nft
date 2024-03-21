@@ -21,7 +21,7 @@ export const Container = styled.div`
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    height: 100%;
+    height: 480px;
   }
 `;
 
@@ -64,50 +64,55 @@ export const LinkContainer = styled.div`
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     width: 100%;
+    padding: 24px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    height: 480px;
   }
 `;
 
 export const IconContainer = styled.div`
   position: absolute;
-  top: 12px;
-  right: 12px;
+  top: 24px;
+  right: 24px;
 
   width: 24px;
   height: 24px;
 
-  padding: 12px;
+  // padding: 12px;
 
   cursor: pointer;
 
   fill: ${variables.colors.whiteText};
 
   ${LinkContainer}:hover & {
-    top: 6px;
-    right: 6px;
+    top: 12px;
+    right: 12px;
 
-    @media screen and (min-width: ${variables.breakpoints.tablet}) {
-      top: 12px;
-      right: 12px;
+    @media screen and (min-width: ${variables.breakpoints.desktop}) {
+      top: 24px;
+      right: 24px;
     }
   }
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    top: 18px;
-    right: 18px;
-    padding: 0;
-  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: 40px;
+    height: 40px;
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    top: 36px;
+    right: 36px;
   }
 `;
 
 export const Box = styled.div`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    // display: grid;
+    padding-left: 108px;
+    // grid-template-columns: 1fr 128px;
   }
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    grid-template-columns: 1fr 1fr;
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding-left: 228px;
   }
 `;

@@ -7,13 +7,13 @@ const AboutUs = () => {
     <s.Container>
       <s.MainContainer>
         <s.MainTitle>
-          a Story that started with <s.Span>one simple ape</s.Span>
+          a Story that started with <s.Span>one simple {'\n'}ape</s.Span>
         </s.MainTitle>
 
         <s.MainDescriptionContainer>
           <s.MainDescription>
             WHO GOT FED UP WITH BORING AND HYPOCRITIC COMMONPLACE THIS IS HOW
-            THE IDEA OF ESCAPING AND DYNAMIC JOURNEY ON THE YACHT
+            THE IDEA OF ESCAPING AND DYNAMIC JOURNEY ON THE{'\n'} YACHT
           </s.MainDescription>
         </s.MainDescriptionContainer>
       </s.MainContainer>

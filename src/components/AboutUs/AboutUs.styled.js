@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   // position: relative;
   // z-index: 90;
-
+  gap: 36px;
   height: 823px;
   // width: 100%;
 
@@ -46,6 +46,7 @@ export const Container = styled.div`
     background-position: bottom right;
     align-items: start;
     height: auto;
+    gap: 86px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -56,6 +57,7 @@ export const Container = styled.div`
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     background-image: url(${imgDesktop1x});
     background-size: 492px 662px;
+    gap: 56px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -71,18 +73,17 @@ export const MainContainer = styled.div`
   // align-items: center;
   width: 220px;
   gap: 16px;
-  margin-bottom: 36px;
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     flex-direction: row;
     // gap: 48px;
-    margin-bottom: 68px;
+    // margin-bottom: 68px;
     width: auto;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     // gap: 85px;
-    margin-bottom: 56px;
+    // margin-bottom: 56px;
   }
 `;
 
@@ -92,8 +93,9 @@ export const MainTitle = styled.h2`
 
   font-weight: 900;
   line-height: 1em;
-  // letter-spacing: 0.44px;
+  letter-spacing: 0.44px;
   // text-align-last: left;
+  white-space: pre-wrap;
 
   color: ${variables.colors.whiteText};
 
@@ -101,6 +103,7 @@ export const MainTitle = styled.h2`
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     font-size: 60px;
+    white-space: normal;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
@@ -133,10 +136,11 @@ export const MainDescription = styled.p`
   color: ${variables.colors.whiteText};
 
   text-transform: uppercase;
-  direction: rtl;
+  // direction: rtl;
   text-align: right;
   font-size: 16px;
   line-height: 1.18em;
+  text-indent: 60%;
 
   // width: 213px;
   width: 216px;
@@ -144,6 +148,8 @@ export const MainDescription = styled.p`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     // gap: 24px;
     width: 275px;
+    white-space: pre-wrap;
+    text-indent: initial;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {

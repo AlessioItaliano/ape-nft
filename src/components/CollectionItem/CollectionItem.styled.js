@@ -24,8 +24,8 @@ export const ImageContainer = styled.div`
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    height: auto;
-    max-width: 280px;
+    height: 280px;
+    width: 240px;
   }
 `;
 

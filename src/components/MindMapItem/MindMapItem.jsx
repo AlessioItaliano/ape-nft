@@ -19,7 +19,7 @@ const MindMapItem = ({ item }) => {
       return (
         <s.Container>
           <s.Box>
-            <div></div>
+            {/* <div></div> */}
             <s.Description>{item.description}</s.Description>
           </s.Box>
           <s.Title>{item.title}</s.Title>

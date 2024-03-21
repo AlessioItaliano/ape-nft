@@ -33,12 +33,17 @@ export const FieldInput = styled(Field)`
   outline: none;
   width: 168px;
 
+  text-transform: uppercase;
+
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     width: 200px;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     width: 333px;
+
+    font-size: 16px;
+    line-height: 1.18em;
   }
 
   color: ${props =>

@@ -29,7 +29,8 @@ export const Button = styled.button`
   padding: 10px;
 
   border-radius: inherit;
-  background: inherit;
+  background: transparent;
+  // background: ${variables.colors.bgWithOpacityPrimary};
   border: none;
 
   cursor: pointer;

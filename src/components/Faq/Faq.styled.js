@@ -35,8 +35,7 @@ export const Item = styled.li`
   color: ${variables.colors.whiteText};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    padding: 18px 0 16px 185px;
-
+    padding: 18px 16px 23px 180px;
     gap: 21px;
   }
 
