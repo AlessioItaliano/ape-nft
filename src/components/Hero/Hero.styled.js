@@ -22,8 +22,8 @@ export const SectionHero = styled.section`
     padding-bottom: 40px;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    padding-bottom: 0 0 60px 0;
-    margin-top: 16px;
+    padding: 16px 0 60px 0;
+    margin: 0 16px;
   }
 `;
 
@@ -145,7 +145,8 @@ export const Title = styled.h2`
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 164px;
-    word-spacing: 240px;
+    word-spacing: 265px;
+    margin-bottom: 30px;
   }
 `;
 
@@ -226,6 +227,9 @@ export const DescriptionContainer = styled.div`
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     width: 337px;
+
+    bottom: -115px;
+    left: 178px;
   }
 `;
 

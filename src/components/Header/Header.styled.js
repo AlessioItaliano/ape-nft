@@ -25,7 +25,7 @@ export const Header = styled.header`
     min-width: 768px;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    padding-top: 60px;
+    padding-top: 28px;
     max-width: 1280px;
   }
 `;
