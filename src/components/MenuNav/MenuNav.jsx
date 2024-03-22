@@ -1,13 +1,20 @@
 import React, { useState, useEffect } from 'react';
+// import { useMediaQuery } from 'react-responsive';
 
 import ModalBurgerMenu from 'components/ModalBurgerMenu';
 import MenuNavList from 'components/MenuNavList';
+
+// import { variables } from 'stylesheet/variables';
 
 import * as s from './MenuNav.styled';
 
 const MenuNav = () => {
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
+
+  // const isMobile = useMediaQuery({
+  //   query: `(max-width: ${variables.breakpoints.mobileMax})`,
+  // });
 
   useEffect(() => {
     const autoResize = () => {

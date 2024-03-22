@@ -21,18 +21,22 @@ export const Header = styled.header`
   background-color: transparent;
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    padding: 66px 28px 0 28px;
     min-width: 768px;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding-top: 60px;
     max-width: 1280px;
   }
 `;
 
-export const Logo = styled.a`
+export const IconContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
   width: 48px;
   height: 48px;
+
   color: ${variables.colors.whiteText};
 `;

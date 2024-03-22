@@ -1,16 +1,14 @@
-// import Container from 'components/Container';
 import * as s from './Hero.styled';
 
 const Hero = () => {
   return (
     <s.SectionHero>
       <s.Background>
-        {/* <Container> */}
         <s.ContainerHero>
           <s.TitleContainer>
-            <s.TitleDescription>diD yOu seE iT ?</s.TitleDescription>
+            <s.TitlePrimary>diD yOu seE iT ?</s.TitlePrimary>
             <s.Title>YACHT APES</s.Title>
-            <s.TitleDescription>Apes aRe eveRywhere</s.TitleDescription>
+            <s.TitleSecondary>Apes aRe eveRywhere</s.TitleSecondary>
           </s.TitleContainer>
 
           <s.DescriptionBox>
@@ -23,7 +21,6 @@ const Hero = () => {
             </s.DescriptionContainer>
           </s.DescriptionBox>
         </s.ContainerHero>
-        {/* </Container> */}
       </s.Background>
     </s.SectionHero>
   );

@@ -9,9 +9,11 @@ import * as s from './Header.styled';
 const Header = () => {
   return (
     <s.Header>
-      <s.Logo href="#">
-        <LogoIcon />
-      </s.Logo>
+      <a href="#" rel="noopener noreferrer nofollow">
+        <s.IconContainer>
+          <LogoIcon />
+        </s.IconContainer>
+      </a>
       <MenuBurger />
     </s.Header>
   );

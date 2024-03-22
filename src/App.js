@@ -1,16 +1,19 @@
 import React from 'react';
 
 import Header from 'components/Header';
-import Section from 'components/Section';
-import Footer from 'components/Footer';
 import Hero from 'components/Hero';
-import AboutUs from 'components/AboutUs';
+
+import Section from 'components/Section';
 import Container from 'components/Container';
-import Banner from 'components/Banner';
+
+import AboutUs from 'components/AboutUs';
 import MindMap from 'components/MindMap';
-import Collection from 'components/Colection';
-import Mint from 'components/Mint';
+import Banner from 'components/Banner';
 import Faq from 'components/Faq';
+import Mint from 'components/Mint';
+import Collection from 'components/Collection';
+
+import Footer from 'components/Footer';
 
 const App = () => {
   return (
