@@ -9,7 +9,10 @@ import * as s from './Header.styled';
 const Header = () => {
   return (
     <s.Header>
-      <a href="#" rel="noopener noreferrer nofollow">
+      <a
+        href="https://alessioitaliano.github.io/ape-nft/"
+        rel="noopener noreferrer nofollow"
+      >
         <s.IconContainer>
           <LogoIcon />
         </s.IconContainer>

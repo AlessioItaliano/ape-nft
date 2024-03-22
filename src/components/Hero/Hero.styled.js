@@ -145,6 +145,7 @@ export const Title = styled.h2`
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 164px;
+    word-spacing: 240px;
   }
 `;
 
