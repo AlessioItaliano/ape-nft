@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { variables } from 'stylesheet/variables';
 
 export const Container = styled.div`
   padding: 0 72px;

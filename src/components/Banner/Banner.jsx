@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import anime from 'animejs';
 
-import { ReactComponent as CloseIcon } from '../../icons/close.svg';
+import { ReactComponent as CloseIcon } from 'icons/close.svg';
+
 import * as s from './Banner.styled';
 
 const Banner = () => {
@@ -17,27 +18,35 @@ const Banner = () => {
 
   return (
     <s.Banner>
-      <s.BannerText id="bannerText">
+      <s.Container id="bannerText">
         <s.IconContainer>
           {' '}
-          <CloseIcon />
+          <s.Box>
+            <CloseIcon />
+          </s.Box>
         </s.IconContainer>{' '}
-        Destroy stereotypes
+        <s.Text>Destroy stereotypes</s.Text>
         <s.IconContainer>
           {' '}
-          <CloseIcon />
+          <s.Box>
+            <CloseIcon />
+          </s.Box>
         </s.IconContainer>{' '}
-        HAVE NO LIMITS
+        <s.Text>HAVE NO LIMITS</s.Text>
         <s.IconContainer>
           {' '}
-          <CloseIcon />
+          <s.Box>
+            <CloseIcon />
+          </s.Box>
         </s.IconContainer>{' '}
-        Break rules
+        <s.Text>Break rules</s.Text>
         <s.IconContainer>
           {' '}
-          <CloseIcon />
+          <s.Box>
+            <CloseIcon />
+          </s.Box>
         </s.IconContainer>{' '}
-      </s.BannerText>
+      </s.Container>
     </s.Banner>
   );
 };

@@ -22,7 +22,7 @@ export const Link = styled.a`
   border-radius: 8px;
   fill: ${variables.colors.blackText};
   background: ${variables.colors.bgWithOpacityPrimary};
-  backdrop-filter: blur(6px);
+  backdrop-filter: ${variables.filters.blur};
   text-transform: uppercase;
 
   &:hover,

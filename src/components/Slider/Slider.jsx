@@ -11,13 +11,13 @@ import * as s from './Slider.styled';
 const Slider = ({ data, children }) => {
   const swiperRef = useRef(null);
 
-  const goNext = () => {
+  const clickNext = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slideNext();
     }
   };
 
-  const goPrev = () => {
+  const clickPrev = () => {
     if (swiperRef.current && swiperRef.current.swiper) {
       swiperRef.current.swiper.slidePrev();
     }
@@ -33,28 +33,30 @@ const Slider = ({ data, children }) => {
   };
 
   return (
-    <>
-      <s.Slider
-        ref={swiperRef}
-        navigation={{
-          prevEl: '.swiper-button-prev',
-          nextEl: '.swiper-button-next',
-        }}
-        modules={[Navigation]}
-        slidesPerView={1}
-        spaceBetween={24}
-        centeredSlidesBounds={true}
-        breakpoints={breakpoints}
-      >
-        {data.map((item, index) => (
-          <s.Item key={index}>{React.cloneElement(children, { item })}</s.Item>
-        ))}
-        <s.ButtonContainer>
-          <s.SliderButton onClick={goPrev}>Prev</s.SliderButton>
-          <s.SliderButton onClick={goNext}>Next</s.SliderButton>
-        </s.ButtonContainer>
-      </s.Slider>
-    </>
+    <s.Slider
+      ref={swiperRef}
+      navigation={{
+        prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+      }}
+      modules={[Navigation]}
+      slidesPerView={1}
+      spaceBetween={24}
+      centeredSlidesBounds={true}
+      breakpoints={breakpoints}
+    >
+      {data.map((item, index) => (
+        <s.Item key={index}>{React.cloneElement(children, { item })}</s.Item>
+      ))}
+      <s.ButtonContainer>
+        <s.SliderButton onClick={clickPrev} aria-label="Previes slide">
+          Prev
+        </s.SliderButton>
+        <s.SliderButton onClick={clickNext} aria-label="Next slide">
+          Next
+        </s.SliderButton>
+      </s.ButtonContainer>
+    </s.Slider>
   );
 };
 

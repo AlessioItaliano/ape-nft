@@ -26,7 +26,7 @@ export const Button = styled.button`
   color: ${variables.colors.blackText};
   background: ${variables.colors.bgWithOpacityPrimary};
   border: none;
-  backdrop-filter: blur(6px);
+  backdrop-filter: ${variables.filters.blur};
 
   font-family: 'Messina Sans Mono';
   font-size: 12px;
@@ -55,7 +55,7 @@ export const Link = styled.a`
   border-radius: 8px;
   fill: ${variables.colors.blackText};
   background: ${variables.colors.bgWithOpacityPrimary};
-  backdrop-filter: blur(6px);
+  backdrop-filter: ${variables.filters.blur};
   text-transform: uppercase;
 
   &:hover,

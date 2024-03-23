@@ -9,7 +9,7 @@ export const Container = styled.nav`
   border-radius: 8px;
   background: ${variables.colors.bgWithOpacityPrimary};
   color: ${variables.colors.blackText};
-  // backdrop-filter: blur(6px);
+  //   backdrop-filter: ${variables.filters.blur};
 
   font-weight: 600;
   text-transform: uppercase;

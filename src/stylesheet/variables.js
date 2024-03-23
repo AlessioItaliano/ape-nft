@@ -15,7 +15,7 @@ export const variables = {
   },
 
   filters: {
-    backdrop: 'blur(6px)',
+    blur: 'blur(6px)',
   },
 
   breakpoints: {

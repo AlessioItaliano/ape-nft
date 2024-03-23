@@ -1,4 +1,4 @@
-import { ReactComponent as ArrowIcon } from '../../icons/arrow-top-right.svg';
+import { ReactComponent as ArrowIcon } from 'icons/arrow-top-right.svg';
 
 import * as s from './MindMapItem.styled';
 

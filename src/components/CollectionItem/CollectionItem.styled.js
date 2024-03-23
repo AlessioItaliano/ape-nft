@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { SwiperSlide } from 'swiper/react';
 
-import { variables } from '../../stylesheet/variables';
+import { variables } from 'stylesheet/variables';
 
 export const Item = styled(SwiperSlide)`
   display: flex;
@@ -20,12 +20,12 @@ export const ImageContainer = styled.div`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     height: 336px;
     max-width: 284px;
-    border-radius: 20px;
+    border-radius: 24px;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     height: 280px;
-    width: 240px;
+    max-width: 240px;
   }
 `;
 

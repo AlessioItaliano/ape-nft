@@ -3,20 +3,26 @@ import styled from 'styled-components';
 import { variables } from 'stylesheet/variables';
 
 export const Banner = styled.div`
-  background-color: ${variables.colors.bgSecondary};
   overflow: hidden;
 
-  padding: 6px 0px 8px 0px;
+  padding: 1px 0px 6px 0px;
+
+  background-color: ${variables.colors.bgSecondary};
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding: 6px 0px 16px 0px;
+  }
 `;
 
-export const BannerText = styled.div`
+export const Container = styled.div`
   scroll-behavior: smooth;
   display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 24px;
 
+  gap: 24px;
+`;
+
+export const Text = styled.p`
   font-family: ${variables.fonts.grotesk};
   font-size: 36px;
   font-weight: 900;
@@ -26,13 +32,24 @@ export const BannerText = styled.div`
   white-space: nowrap;
 
   color: ${variables.colors.whiteText};
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    font-size: 64px;
+  }
 `;
 
 export const IconContainer = styled.div`
-  width: 36px;
-  height: 36px;
+  display: flex;
+  align-items: center;
+`;
 
-  display: inline-flex;
+export const Box = styled.div`
+  width: 36px;
+  margin-top: 7px;
 
   fill: ${variables.colors.whiteText};
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    padding-top: 10px;
+  }
 `;

@@ -291,7 +291,7 @@ export const HeroButton = styled.a`
   background: ${variables.colors.bgWithOpacityPrimary};
   color: ${variables.colors.blackText};
 
-  backdrop-filter: blur(6px);
+  backdrop-filter: ${variables.filters.blur};
 
   text-align: center;
   font-family: ${variables.fonts.grotesk};

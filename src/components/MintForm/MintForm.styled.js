@@ -31,7 +31,7 @@ export const Container = styled.div`
 
   border-radius: 8px;
   background: ${variables.colors.bgTertiary};
-  backdrop-filter: blur(6px);
+  backdrop-filter: ${variables.filters.blur};
 `;
 
 export const IconContainer = styled.div`
@@ -48,7 +48,7 @@ export const IconContainer = styled.div`
 
   fill: ${variables.colors.secondary};
   background: ${variables.colors.bgTertiary};
-  backdrop-filter: blur(6px);
+  backdrop-filter: ${variables.filters.blur};
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     width: 64px;

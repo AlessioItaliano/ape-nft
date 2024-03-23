@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { variables } from 'stylesheet/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -18,20 +18,23 @@ export const Container = styled.div`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     width: 100%;
     padding: 24px;
+    border-radius: 16px;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     height: 480px;
+    border-radius: 24px;
   }
 `;
 
 export const Title = styled.h3`
-  color: ${variables.colors.whiteText};
   font-family: ${variables.fonts.grotesk};
   font-size: 32px;
   font-weight: 900;
   line-height: 1em;
   text-transform: uppercase;
+
+  color: ${variables.colors.whiteText};
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 64px;
@@ -51,36 +54,35 @@ export const Description = styled.p`
 export const LinkContainer = styled.div`
   display: flex;
   align-items: flex-end;
+  position: relative;
   white-space: pre-wrap;
 
-  width: 216px;
+  width: 100%;
+  min-width: 206px;
   height: 242px;
   padding: 24px 12px;
   border-radius: 12px;
 
   background: ${variables.colors.bgSecondary};
 
-  position: relative;
-
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    width: 100%;
+    border-radius: 16px;
     padding: 24px;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    border-radius: 24px;
     height: 480px;
   }
 `;
 
 export const IconContainer = styled.div`
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 18px;
+  right: 18px;
 
   width: 24px;
   height: 24px;
-
-  // padding: 12px;
 
   cursor: pointer;
 
@@ -107,9 +109,7 @@ export const IconContainer = styled.div`
 
 export const Box = styled.div`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    // display: grid;
     padding-left: 108px;
-    // grid-template-columns: 1fr 128px;
   }
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {

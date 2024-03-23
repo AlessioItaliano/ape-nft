@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { variables } from 'stylesheet/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -25,9 +25,10 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   display: flex;
+  position: relative;
+
   gap: 8px;
   padding: 8px;
-  position: relative;
 
   counter-increment: list-counter;
   cursor: pointer;
@@ -101,6 +102,21 @@ export const Item = styled.li`
   `}
 `;
 
+export const DescriptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    gap: 12px;
+  }
+
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    gap: 36px;
+  }
+`;
+
 export const Main = styled.p`
   font-family: ${variables.fonts.grotesk};
   font-size: 20px;
@@ -117,26 +133,12 @@ export const Main = styled.p`
   }
 `;
 
-export const DescriptionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    gap: 12px;
-  }
-
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    gap: 36px;
-  }
-`;
-
 export const Description = styled.p`
   display: none;
-  color: ${variables.colors.whiteText};
 
-  font-family: ${variables.fonts.messina};
   text-transform: uppercase;
+
+  color: ${variables.colors.whiteText};
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 16px;
@@ -147,6 +149,7 @@ export const Description = styled.p`
 export const ItemContainer = styled.div`
   display: flex;
   align-items: center;
+
   gap: 20px;
 `;
 
