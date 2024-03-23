@@ -11,6 +11,6 @@ export const Footer = styled.footer`
     padding: 40px 0;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    padding: 60px 0;
+    padding: 60px 0 40px o;
   }
 `;

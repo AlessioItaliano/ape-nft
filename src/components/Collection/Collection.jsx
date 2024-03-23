@@ -8,7 +8,7 @@ import { useMediaQuery } from 'react-responsive';
 
 import { variables } from 'stylesheet/variables';
 
-import { imagesMobile, imagesDesktop } from 'data/images';
+import { collectionImagesMobile, collectionImagesDesktop } from 'data/images';
 
 const Collection = () => {
   const isMobile = useMediaQuery({
@@ -18,7 +18,9 @@ const Collection = () => {
   return (
     <s.Container>
       <Title name="Collection" />
-      <Slider data={isMobile ? imagesMobile : imagesDesktop}>
+      <Slider
+        data={isMobile ? collectionImagesMobile : collectionImagesDesktop}
+      >
         <CollectionItem />
       </Slider>
     </s.Container>

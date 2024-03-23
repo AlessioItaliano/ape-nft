@@ -1,3 +1,6 @@
+import ImageItem from 'components/ImageItem';
+import { heroImages } from '../../data/images';
+
 import * as s from './Hero.styled';
 
 const Hero = () => {
@@ -10,7 +13,9 @@ const Hero = () => {
             <s.Title>YACHT APES</s.Title>
             <s.TitleSecondary>Apes aRe eveRywhere</s.TitleSecondary>
           </s.TitleContainer>
-
+          <s.ImageContainer>
+            <ImageItem item={heroImages} />
+          </s.ImageContainer>
           <s.DescriptionBox>
             <s.DescriptionContainer>
               <s.HeroButton href="#mint">Meet apes</s.HeroButton>

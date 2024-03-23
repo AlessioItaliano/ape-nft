@@ -14,6 +14,10 @@ export const variables = {
     bgWithOpacitySecondary: 'rgba(255, 255, 255, 0.10)',
   },
 
+  filters: {
+    backdrop: 'blur(6px)',
+  },
+
   breakpoints: {
     mobileMin: '360px',
     mobileMax: '480px',

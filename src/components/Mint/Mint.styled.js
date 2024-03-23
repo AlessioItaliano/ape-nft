@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { variables } from 'stylesheet/variables';
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   gap: 24px;
@@ -11,6 +12,7 @@ export const Container = styled.div`
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     gap: 40px;
   }
+
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     gap: 80px;
   }
@@ -21,15 +23,22 @@ export const DescriptionContainer = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+
   gap: 16px;
+  margin: 0 auto;
+  max-width: 216px;
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     gap: 24px;
+    max-width: 400px;
   }
+
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     gap: 40px;
+    max-width: 580px;
   }
 `;
+
 export const IconContainer = styled.div`
   width: 36px;
   height: 36px;
@@ -38,23 +47,15 @@ export const IconContainer = styled.div`
 `;
 
 export const Description = styled.p`
-  color: ${variables.colors.whiteText};
-
   font-size: 16px;
   line-height: 1.18em;
   text-align: center;
   text-transform: uppercase;
 
-  width: 213px;
-
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    gap: 24px;
-    width: 397px;
-  }
+  color: ${variables.colors.whiteText};
 
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 24px;
     line-height: 1.2em;
-    width: 518px;
   }
 `;

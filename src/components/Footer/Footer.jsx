@@ -1,6 +1,7 @@
 import Container from 'components/Container';
-import * as s from './Footer.styled';
 import CopyRight from 'components/CopyRight';
+
+import * as s from './Footer.styled';
 
 const Footer = () => {
   return (

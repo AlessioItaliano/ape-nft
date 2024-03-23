@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-import imgMobile1x from '../../images/appImages/story-ape-mobile-1x.png';
-import imgMobile2x from '../../images/appImages/story-ape-mobile-2x.png';
-import imgTablet1x from '../../images/appImages/story-ape-tablet-1x.png';
-import imgTablet2x from '../../images/appImages/story-ape-tablet-2x.png';
-import imgDesktop1x from '../../images/appImages/story-ape-desktop-1x.png';
-import imgDesktop2x from '../../images/appImages/story-ape-desktop-2x.png';
+// import imgMobile1x from '../../images/appImages/story-ape-mobile-1x.png';
+// import imgMobile2x from '../../images/appImages/story-ape-mobile-2x.png';
+// import imgTablet1x from '../../images/appImages/story-ape-tablet-1x.png';
+// import imgTablet2x from '../../images/appImages/story-ape-tablet-2x.png';
+// import imgDesktop1x from '../../images/appImages/story-ape-desktop-1x.png';
+// import imgDesktop2x from '../../images/appImages/story-ape-desktop-2x.png';
 
 import { variables } from '../../stylesheet/variables';
 
@@ -17,8 +17,8 @@ export const Container = styled.div`
   // justify-content: space-between;
   // align-content: space-between;
 
-  // position: relative;
-  // z-index: 90;
+  position: relative;
+  z-index: 90;
   gap: 36px;
   height: 823px;
   // width: 100%;
@@ -29,41 +29,13 @@ export const Container = styled.div`
 
   // background-color: ${variables.colors.bgSecondary};
 
-  background-image: url(${imgMobile1x});
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: 216px 292px;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(${imgMobile2x});
-  }
-
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    background-image: url(${imgTablet1x});
-    background-size: 313px 422px;
-    background-position: bottom right;
     align-items: start;
     height: auto;
     gap: 86px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(${imgTablet2x});
-    }
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    background-image: url(${imgDesktop1x});
-    background-size: 492px 662px;
     gap: 56px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(${imgDesktop2x});
-    }
   }
 `;
 export const MainContainer = styled.div`
@@ -193,12 +165,10 @@ export const IconContainer = styled.div`
 `;
 
 export const SecondDescription = styled.p`
-  color: ${variables.colors.whiteText};
-
   text-align: center;
   text-transform: uppercase;
 
-  // width: 213px;
+  color: ${variables.colors.whiteText};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     font-size: 16px;
@@ -208,5 +178,26 @@ export const SecondDescription = styled.p`
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 24px;
     line-height: 1.2em;
+  }
+`;
+
+export const ImageContainer = styled.div`
+  position: absolute;
+  z-index: 2;
+
+  width: 216px;
+  height: 292px;
+
+  bottom: 0;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    width: 313px;
+    height: 422px;
+
+    right: 0;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: 492px;
+    height: 662px;
   }
 `;

@@ -1,7 +1,7 @@
 import Title from 'components/Title';
 import MintForm from 'components/MintForm';
 
-import { ReactComponent as CloseIcon } from '../../icons/close.svg';
+import { ReactComponent as CloseIcon } from 'icons/close.svg';
 
 import * as s from './Mint.styled';
 

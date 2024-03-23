@@ -1,11 +1,35 @@
 import styled from 'styled-components';
 
-import mainHeroMobile1x from '../../images/appImages/hero-ape-mobile-1x.png';
-import mainHeroMobile2x from '../../images/appImages/hero-ape-mobile-2x.png';
-import mainHeroTablet1x from '../../images/appImages/hero-ape-tablet-1x.png';
-import mainHeroTablet2x from '../../images/appImages/hero-ape-tablet-2x.png';
-import mainHeroDesktop1x from '../../images/appImages/hero-ape-desktop-1x.png';
-import mainHeroDesktop2x from '../../images/appImages/hero-ape-desktop-2x.png';
+// import mainHeroMobile1x from '../../images/appImages/hero-ape-mobile-1x.png';
+// import mainHeroMobile2x from '../../images/appImages/hero-ape-mobile-2x.png';
+// import mainHeroTablet1x from '../../images/appImages/hero-ape-tablet-1x.png';
+// import mainHeroTablet2x from '../../images/appImages/hero-ape-tablet-2x.png';
+// import mainHeroDesktop1x from '../../images/appImages/hero-ape-desktop-1x.png';
+// import mainHeroDesktop2x from '../../images/appImages/hero-ape-desktop-2x.png';
+
+//  background-image: url(${mainHeroMobile1x});
+//   background-position: bottom 110px center;
+//   background-repeat: no-repeat;
+//   background-size: 216px 284px;
+
+//   @media (min-device-pixel-ratio: 2),
+//     (min-resolution: 192dpi),
+//     (min-resolution: 2dppx) {
+//     background-image: url(${mainHeroMobile2x});
+//   }
+
+//   @media screen and (min-width: ${variables.breakpoints.tablet}) {
+//     background-image: url(${mainHeroTablet1x});
+//     background-position: calc(50% - 20px) bottom;
+//     // background-position: center bottom;
+//     background-size: 283px 386px;
+
+//     @media (min-device-pixel-ratio: 2),
+//       (min-resolution: 192dpi),
+//       (min-resolution: 2dppx) {
+//       background-image: url(${mainHeroTablet2x});
+//     }
+//   }
 
 import { variables } from '../../stylesheet/variables';
 
@@ -28,82 +52,72 @@ export const SectionHero = styled.section`
 `;
 
 export const Background = styled.div`
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 
   background-color: ${variables.colors.bgSecondary};
 
-  background-image: url(${mainHeroMobile1x});
-  background-position: bottom 110px center;
-  background-repeat: no-repeat;
-  background-size: 216px 284px;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(${mainHeroMobile2x});
-  }
+  height: 542px;
+  padding: 36px 64px 19px 64px;
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    background-image: url(${mainHeroTablet1x});
-    background-position: calc(50% - 20px) bottom;
-    // background-position: center bottom;
-    background-size: 283px 386px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(${mainHeroTablet2x});
-    }
+    height: 421px;
+    padding: 124px 72px 123px 72px;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    background-image: url(${mainHeroDesktop1x});
-    background-size: 463px 612px;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(${mainHeroDesktop2x});
-    }
+    // justify-content: center;
+    height: 677px;
+    padding: 197px 120px 206px 120px;
   }
 `;
 
 export const ContainerHero = styled.div`
   display: flex;
-  align-items: center;
+  // align-items: center;
   // justify-content: center;
-  text-align: center;
+  // text-align: center;
 
   flex-direction: column;
   justify-content: space-between;
   // align-content: space-between;
 
   position: relative;
+  height: inherit;
+  // z-index: 3;
   // z-index: 90;
   // max-width: 591px;
-  height: 542px;
+  // height: 542px;
   // margin: 0 auto;
-  padding: 36px 64px 19px 64px;
+  // padding: 36px 64px 19px 64px;
 
   // padding: 0 72px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   // min-width: ${variables.breakpoints.mobileMin};
-  max-width: ${variables.breakpoints.mobileMax};
+  // max-width: ${variables.breakpoints.mobileMax};
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
-    padding: 124px 72px 123px 72px;
+    // padding: 124px 72px 123px 72px;
+    // padding: 124px 0 123px 0;
     // padding-left: auto;
     // padding-right: auto;
-    height: 421px;
-    max-width: 591px;
+    // height: 421px;
+    // max-width: 591px;
     // min-width: 768px;
     // justify-content: center;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
-    height: 677px;
-    padding: 65px 120px 81px 120px;
-    width: 100%;
-    max-width: 1019px;
+    // height: 677px;
+    // padding: 65px 120px 81px 120px;
+    // padding: 65px 0 81px 0;
     justify-content: center;
   }
 `;
@@ -118,9 +132,12 @@ export const TitleContainer = styled.div`
   // margin-right: auto;
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    max-width: 591px;
     align-items: flex-start;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: 100%;
+    max-width: 1019px;
   }
 `;
 
@@ -134,7 +151,8 @@ export const Title = styled.h2`
   color: ${variables.colors.blackText};
 
   white-space: nowrap;
-  // position: relative;
+  position: relative;
+  z-index: 3;
 
   margin-bottom: 8px;
 
@@ -145,8 +163,9 @@ export const Title = styled.h2`
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     font-size: 164px;
-    word-spacing: 265px;
+    word-spacing: 257px;
     margin-bottom: 30px;
+    z-index: 1;
   }
 `;
 
@@ -195,6 +214,8 @@ export const DescriptionBox = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 216px;
+  position: relative;
+  z-index: 10;
 
   @media screen and (min-width: ${variables.breakpoints.tablet}) {
     // justify-content: end;
@@ -202,6 +223,7 @@ export const DescriptionBox = styled.div`
     // bottom: 35px;
     // right: 72px;
     position: relative;
+    z-index: 10;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
   }
@@ -220,16 +242,17 @@ export const DescriptionContainer = styled.div`
     // // align-items: end;
     // justify-content: end;
     width: 190px;
+    gap: 16px;
 
     position: absolute;
-    bottom: -85px;
-    left: 105px;
+    bottom: -87px;
+    left: 400px;
   }
   @media screen and (min-width: ${variables.breakpoints.desktop}) {
     width: 337px;
-
-    bottom: -115px;
-    left: 178px;
+    gap: 28px;
+    bottom: -121px;
+    left: 690px;
   }
 `;
 
@@ -267,6 +290,7 @@ export const HeroButton = styled.a`
   border: none;
   background: ${variables.colors.bgWithOpacityPrimary};
   color: ${variables.colors.blackText};
+
   backdrop-filter: blur(6px);
 
   text-align: center;
@@ -290,5 +314,28 @@ export const HeroButton = styled.a`
 
     font-size: 28px;
     line-height: 1.21em;
+  }
+`;
+export const ImageContainer = styled.div`
+  position: absolute;
+  display: flex;
+  width: 216px;
+  height: 284px;
+  z-index: 2;
+  bottom: 91px;
+
+  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+    width: 283px;
+    height: 386px;
+
+    bottom: -123px;
+    right: 175px;
+  }
+  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+    width: 463px;
+    height: 612px;
+
+    bottom: -206px;
+    right: 299px;
   }
 `;
