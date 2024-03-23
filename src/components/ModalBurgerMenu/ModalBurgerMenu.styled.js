@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { vars } from '../../stylesheet/variables';
 
 export const Field = styled.div`
   position: absolute;
@@ -17,7 +17,7 @@ export const Field = styled.div`
   padding: 62px 16px 0 16px;
   //   box-sizing: border-box;
 
-  background: ${variables.colors.bgMain};
+  background: ${vars.colors.bgMain};
 `;
 
 export const CloseButton = styled.button`
@@ -34,15 +34,15 @@ export const CloseButton = styled.button`
   padding: 10px;
 
   border-radius: 8px;
-  background: ${variables.colors.bgWithOpacitySecondary};
-  color: ${variables.colors.whiteText};
+  background: ${vars.colors.bgWithOpacitySecondary};
+  color: ${vars.colors.whiteText};
   border: none;
 
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: ${variables.colors.redText};
+    color: ${vars.colors.redText};
   }
 `;
 
@@ -55,7 +55,7 @@ export const Logo = styled.a`
   gap: 5px;
 
   margin-bottom: 30px;
-  fill: ${variables.colors.whiteText};
+  fill: ${vars.colors.whiteText};
   cursor: pointer;
 `;
 
@@ -83,13 +83,13 @@ export const Link = styled.a`
   padding: 10px;
 
   border-radius: 8px;
-  fill: ${variables.colors.whiteText};
-  background: ${variables.colors.bgWithOpacitySecondary};
-  backdrop-filter: ${variables.filters.blur};
+  fill: ${vars.colors.whiteText};
+  background: ${vars.colors.bgWithOpacitySecondary};
+  backdrop-filter: ${vars.filters.blur};
 
   &:hover,
   &:focus {
-    fill: ${variables.colors.redText};
+    fill: ${vars.colors.redText};
   }
 `;
 
@@ -110,7 +110,7 @@ export const AnchorLink = styled.a`
   justify-content: center;
   align-items: center;
   white-space: nowrap;
-  color: ${variables.colors.whiteText};
+  color: ${vars.colors.whiteText};
 
   font-size: 24px;
   font-weight: 600;
@@ -119,7 +119,7 @@ export const AnchorLink = styled.a`
 
   &:hover,
   &:focus {
-    color: ${variables.colors.redText};
+    color: ${vars.colors.redText};
   }
 `;
 export const NavContainer = styled.div`

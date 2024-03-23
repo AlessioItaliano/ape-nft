@@ -4,14 +4,14 @@ import Title from 'components/Title';
 import Slider from 'components/Slider';
 import CollectionItem from 'components/CollectionItem';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 import { collectionImagesMobile, collectionImagesDesktop } from 'data/images';
 
 import * as s from './Collection.styled';
 
 const Collection = () => {
   const isMobile = useMediaQuery({
-    query: `(max-width: ${variables.breakpoints.tablet} - 1px)`,
+    query: `(max-width: ${vars.breakpoints.tablet} - 1px)`,
   });
 
   return (

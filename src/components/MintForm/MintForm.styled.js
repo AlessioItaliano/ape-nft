@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Field, Form, ErrorMessage } from 'formik';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Forma = styled(Form)`
   display: flex;
@@ -12,11 +12,11 @@ export const Forma = styled(Form)`
   gap: 16px;
   max-width: 216px;
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+  @media screen and (min-width: ${vars.breakpoints.tablet}) {
     max-width: 247px;
   }
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     max-width: 397px;
   }
 `;
@@ -30,8 +30,8 @@ export const Container = styled.div`
   width: 100%;
 
   border-radius: 8px;
-  background: ${variables.colors.bgTertiary};
-  backdrop-filter: ${variables.filters.blur};
+  background: ${vars.colors.bgTertiary};
+  backdrop-filter: ${vars.filters.blur};
 `;
 
 export const IconContainer = styled.div`
@@ -46,11 +46,11 @@ export const IconContainer = styled.div`
 
   border-radius: 8px 0px 0px 8px;
 
-  fill: ${variables.colors.secondary};
-  background: ${variables.colors.bgTertiary};
-  backdrop-filter: ${variables.filters.blur};
+  fill: ${vars.colors.secondary};
+  background: ${vars.colors.bgTertiary};
+  backdrop-filter: ${vars.filters.blur};
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     width: 64px;
     height: 64px;
   }
@@ -74,28 +74,27 @@ export const Input = styled(Field)`
   font-size: 12px;
   text-transform: uppercase;
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     font-size: 16px;
     line-height: 1.18em;
     padding: 22px 24px;
   }
 
   color: ${props =>
-    props.error ? variables.colors.redText : variables.colors.whiteText};
+    props.error ? vars.colors.redText : vars.colors.whiteText};
   border: 1px solid
-    ${props =>
-      props.error ? variables.colors.redText : variables.colors.bgTertiary};
-  background-color: ${variables.colors.bgMain};
+    ${props => (props.error ? vars.colors.redText : vars.colors.bgTertiary)};
+  background-color: ${vars.colors.bgMain};
 
   &::placeholder {
-    color: ${variables.colors.placeholder};
+    color: ${vars.colors.placeholder};
   }
 
   &:hover,
   &:focus,
   &:active {
-    color: ${variables.colors.whiteText};
-    border: 1px solid ${variables.colors.whiteText};
+    color: ${vars.colors.whiteText};
+    border: 1px solid ${vars.colors.whiteText};
   }
 `;
 
@@ -108,9 +107,9 @@ export const Error = styled(ErrorMessage)`
   line-height: 1.2em;
   text-transform: uppercase;
 
-  color: ${variables.colors.redText};
+  color: ${vars.colors.redText};
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     font-size: 12px;
     line-height: 1.16em;
   }

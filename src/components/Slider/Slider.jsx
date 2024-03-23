@@ -4,7 +4,7 @@ import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 import * as s from './Slider.styled';
 
@@ -24,10 +24,10 @@ const Slider = ({ data, children }) => {
   };
 
   const breakpoints = {
-    [variables.breakpoints.tablet.slice(0, -2) - 1]: {
+    [vars.breakpoints.tablet.slice(0, -2) - 1]: {
       slidesPerView: 2,
     },
-    [variables.breakpoints.desktop.slice(0, -2) - 1]: {
+    [vars.breakpoints.desktop.slice(0, -2) - 1]: {
       slidesPerView: 4,
     },
   };

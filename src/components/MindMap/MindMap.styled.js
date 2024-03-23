@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -7,10 +7,10 @@ export const Container = styled.div`
   align-items: center;
   gap: 24px;
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+  @media screen and (min-width: ${vars.breakpoints.tablet}) {
     gap: 40px;
   }
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     gap: 80px;
   }
 `;

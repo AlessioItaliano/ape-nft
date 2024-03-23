@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Text = styled.p`
   text-align: center;
   text-transform: uppercase;
 
-  color: ${variables.colors.whiteText};
+  color: ${vars.colors.whiteText};
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     font-size: 16px;
     line-height: 1.18em;
   }

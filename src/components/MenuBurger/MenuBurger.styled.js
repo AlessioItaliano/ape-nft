@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -23,10 +23,10 @@ export const Button = styled.button`
   padding: 10px;
 
   border-radius: 8px;
-  color: ${variables.colors.blackText};
-  background: ${variables.colors.bgWithOpacityPrimary};
+  color: ${vars.colors.blackText};
+  background: ${vars.colors.bgWithOpacityPrimary};
   border: none;
-  backdrop-filter: ${variables.filters.blur};
+  backdrop-filter: ${vars.filters.blur};
 
   font-family: 'Messina Sans Mono';
   font-size: 12px;
@@ -39,7 +39,7 @@ export const Button = styled.button`
 
   &:hover,
   &:focus {
-    color: ${variables.colors.whiteText};
+    color: ${vars.colors.whiteText};
   }
 `;
 
@@ -53,13 +53,13 @@ export const Link = styled.a`
   padding: 10px;
 
   border-radius: 8px;
-  fill: ${variables.colors.blackText};
-  background: ${variables.colors.bgWithOpacityPrimary};
-  backdrop-filter: ${variables.filters.blur};
+  fill: ${vars.colors.blackText};
+  background: ${vars.colors.bgWithOpacityPrimary};
+  backdrop-filter: ${vars.filters.blur};
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    fill: ${variables.colors.whiteText};
+    fill: ${vars.colors.whiteText};
   }
 `;

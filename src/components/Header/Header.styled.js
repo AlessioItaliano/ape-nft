@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { vars } from '../../stylesheet/variables';
 
 export const Header = styled.header`
   display: flex;
@@ -8,8 +8,8 @@ export const Header = styled.header`
   position: absolute;
   z-index: 100;
 
-  min-width: ${variables.breakpoints.mobileMin};
-  max-width: ${variables.breakpoints.mobileMax};
+  min-width: ${vars.breakpoints.mobileMin};
+  max-width: ${vars.breakpoints.mobileMax};
   height: auto;
 
   left: 0;
@@ -20,11 +20,11 @@ export const Header = styled.header`
 
   background-color: transparent;
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+  @media screen and (min-width: ${vars.breakpoints.tablet}) {
     padding: 66px 28px 0 28px;
     min-width: 768px;
   }
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     padding-top: 28px;
     max-width: 1280px;
   }
@@ -38,5 +38,5 @@ export const IconContainer = styled.div`
   width: 48px;
   height: 48px;
 
-  color: ${variables.colors.whiteText};
+  color: ${vars.colors.whiteText};
 `;

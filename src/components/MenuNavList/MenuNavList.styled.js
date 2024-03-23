@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const List = styled.ul`
   display: flex;
@@ -23,6 +23,6 @@ export const Link = styled.a`
 
   &:hover,
   &:focus {
-    color: ${variables.colors.whiteText};
+    color: ${vars.colors.whiteText};
   }
 `;

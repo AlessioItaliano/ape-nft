@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-import { variables } from '../../stylesheet/variables';
+import { vars } from '../../stylesheet/variables';
 
 export const Slider = styled(Swiper)`
   display: flex;
@@ -12,7 +12,7 @@ export const Slider = styled(Swiper)`
   width: 100%;
   height: 100%;
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     gap: 48px;
   }
 `;
@@ -32,17 +32,17 @@ export const ButtonContainer = styled.div`
 `;
 
 export const SliderButton = styled.button`
-  font-family: ${variables.fonts.biro};
+  font-family: ${vars.fonts.biro};
   font-size: 24px;
   line-height: 1.25em;
 
   border: none;
-  color: ${variables.colors.whiteText};
+  color: ${vars.colors.whiteText};
   background-color: inherit;
 
   cursor: pointer;
 
   &:hover {
-    color: ${variables.colors.redText};
+    color: ${vars.colors.redText};
   }
 `;

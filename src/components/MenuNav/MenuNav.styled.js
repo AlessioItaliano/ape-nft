@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Container = styled.nav`
   display: flex;
   flex-direction: row-reverse;
 
   border-radius: 8px;
-  background: ${variables.colors.bgWithOpacityPrimary};
-  color: ${variables.colors.blackText};
-  //   backdrop-filter: ${variables.filters.blur};
+  background: ${vars.colors.bgWithOpacityPrimary};
+  color: ${vars.colors.blackText};
+  //   backdrop-filter: ${vars.filters.blur};
 
   font-weight: 600;
   text-transform: uppercase;
@@ -30,13 +30,13 @@ export const Button = styled.button`
 
   border-radius: inherit;
   background: transparent;
-  // background: ${variables.colors.bgWithOpacityPrimary};
+  // background: ${vars.colors.bgWithOpacityPrimary};
   border: none;
 
   cursor: pointer;
 
   &:hover,
   &:focus {
-    color: ${variables.colors.whiteText};
+    color: ${vars.colors.whiteText};
   }
 `;

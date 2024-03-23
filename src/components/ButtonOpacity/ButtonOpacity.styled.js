@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from '../../stylesheet/variables';
+import { vars } from '../../stylesheet/variables';
 
 export const Button = styled.button`
   display: flex;
@@ -14,12 +14,12 @@ export const Button = styled.button`
 
   border: none;
 
-  background: ${variables.colors.bgWithOpacityPrimary};
-  color: ${variables.colors.blackText};
-  backdrop-filter: ${variables.filters.blur};
+  background: ${vars.colors.bgWithOpacityPrimary};
+  color: ${vars.colors.blackText};
+  backdrop-filter: ${vars.filters.blur};
 
   text-align: center;
-  font-family: ${variables.fonts.grotesk};
+  font-family: ${vars.fonts.grotesk};
   font-size: 16px;
   font-weight: 900;
   line-height: 1.18em;
@@ -27,6 +27,6 @@ export const Button = styled.button`
 
   &:focus,
   &:hover {
-    color: ${variables.colors.whiteText};
+    color: ${vars.colors.whiteText};
   }
 `;

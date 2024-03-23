@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { SwiperSlide } from 'swiper/react';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Item = styled(SwiperSlide)`
   display: flex;
@@ -17,13 +17,13 @@ export const ImageContainer = styled.div`
 
   overflow: hidden;
 
-  @media screen and (min-width: ${variables.breakpoints.tablet}) {
+  @media screen and (min-width: ${vars.breakpoints.tablet}) {
     height: 336px;
     max-width: 284px;
     border-radius: 24px;
   }
 
-  @media screen and (min-width: ${variables.breakpoints.desktop}) {
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
     height: 280px;
     max-width: 240px;
   }

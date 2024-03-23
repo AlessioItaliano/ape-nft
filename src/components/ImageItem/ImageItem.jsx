@@ -1,4 +1,4 @@
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 import * as s from './ImageItem.styled';
 
@@ -16,8 +16,8 @@ const ImageItem = ({ item }) => {
           ${image2x.desktop} 2560w
         `}
       sizes={`
-          (min-width: ${variables.breakpoints.mobileMin}) and (max-width: calc(${variables.breakpoints.tablet} - 1px)) 300px,
-          (min-width: ${variables.breakpoints.tablet}) and (max-width: calc(${variables.breakpoints.desktop} - 1px)) 768px,
+          (min-width: ${vars.breakpoints.mobileMin}) and (max-width: calc(${vars.breakpoints.tablet} - 1px)) 300px,
+          (min-width: ${vars.breakpoints.tablet}) and (max-width: calc(${vars.breakpoints.desktop} - 1px)) 768px,
           1280px
         `}
       src={image1x.mobile}

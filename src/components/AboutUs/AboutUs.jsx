@@ -1,4 +1,4 @@
-import { ReactComponent as CloseIcon } from '../../icons/close.svg';
+import { ReactComponent as CloseIcon } from 'icons/close.svg';
 
 import ImageItem from 'components/ImageItem';
 import { aboutUsImages } from 'data/images';
@@ -9,9 +9,9 @@ const AboutUs = () => {
   return (
     <s.Container>
       <s.MainContainer>
-        <s.MainTitle>
+        <s.Title>
           a Story that started with <s.Span>one simple {'\n'}ape</s.Span>
-        </s.MainTitle>
+        </s.Title>
 
         <s.MainDescriptionContainer>
           <s.MainDescription>

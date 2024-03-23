@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 export const Container = styled.div`
   display: flex;
@@ -20,14 +20,14 @@ export const Link = styled.a`
   padding: 10px;
 
   border-radius: 8px;
-  fill: ${variables.colors.blackText};
-  background: ${variables.colors.bgWithOpacityPrimary};
-  backdrop-filter: ${variables.filters.blur};
+  fill: ${vars.colors.blackText};
+  background: ${vars.colors.bgWithOpacityPrimary};
+  backdrop-filter: ${vars.filters.blur};
   text-transform: uppercase;
 
   &:hover,
   &:focus {
-    fill: ${variables.colors.whiteText};
+    fill: ${vars.colors.whiteText};
   }
 `;
 

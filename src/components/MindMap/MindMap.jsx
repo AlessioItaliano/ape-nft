@@ -7,13 +7,13 @@ import MindMapList from 'components/MindMapList';
 
 import { mind } from 'data/mindMap';
 
-import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 import * as s from './MindMap.styled';
 
 const MindMap = () => {
   const isMobile = useMediaQuery({
-    query: `(max-width: ${variables.breakpoints.mobileMax})`,
+    query: `(max-width: ${vars.breakpoints.mobileMax})`,
   });
 
   return (

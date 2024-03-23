@@ -1,4 +1,4 @@
-export const variables = {
+export const vars = {
   colors: {
     blackText: '#1E1E1E',
     whiteText: '#FFF',
