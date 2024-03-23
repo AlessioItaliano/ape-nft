@@ -1,23 +1,13 @@
-import React from 'react';
-
-import { ReactComponent as LogoIcon } from '../../icons/logoMain.svg';
-
-import MenuBurger from 'components/MenuBurger';
+import HeaderMenu from 'components/HeaderMenu';
+import HeaderLogo from 'components/HeaderLogo';
 
 import * as s from './Header.styled';
 
 const Header = () => {
   return (
     <s.Header>
-      <a
-        href="https://alessioitaliano.github.io/ape-nft/"
-        rel="noopener noreferrer nofollow"
-      >
-        <s.IconContainer>
-          <LogoIcon />
-        </s.IconContainer>
-      </a>
-      <MenuBurger />
+      <HeaderLogo theme="dark" />
+      <HeaderMenu />
     </s.Header>
   );
 };

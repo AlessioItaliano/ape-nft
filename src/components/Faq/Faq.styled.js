@@ -28,7 +28,7 @@ export const Item = styled.li`
   position: relative;
 
   gap: 8px;
-  padding: 8px;
+  padding: 8px 8px 10px 8px;
 
   counter-increment: list-counter;
   cursor: pointer;
@@ -41,7 +41,7 @@ export const Item = styled.li`
   }
 
   @media screen and (min-width: ${vars.breakpoints.desktop}) {
-    padding: 24px 15px 24px 250px;
+    padding: 24px 24px 24px 296px;
     gap: 27px;
   }
 
@@ -160,12 +160,12 @@ export const ImageContainer = styled.div`
     position: absolute;
     z-index: 1000;
     top: -15px;
-    left: 20px;
+    left: 19px;
 
     width: auto;
     height: 183px;
 
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
     transform: rotate(-16deg);
     color: ${vars.colors.redText};
@@ -177,6 +177,7 @@ export const ImageContainer = styled.div`
     left: 15px;
     height: 282px;
     transform: rotate(-8deg);
+    border-radius: 24px;
   }
 `;
 

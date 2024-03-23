@@ -2,17 +2,21 @@ import styled from 'styled-components';
 
 import { vars } from 'stylesheet/variables';
 
-export const Container = styled.nav`
+export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
 
   border-radius: 8px;
   background: ${vars.colors.bgWithOpacityPrimary};
   color: ${vars.colors.blackText};
-  //   backdrop-filter: ${vars.filters.blur};
+  backdrop-filter: ${vars.filters.blur};
 
   font-weight: 600;
-  text-transform: uppercase;
+
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
+    font-size: 16px;
+    line-height: 1.18em;
+  }
 `;
 
 export const Button = styled.button`
@@ -21,6 +25,7 @@ export const Button = styled.button`
   align-items: center;
 
   font-family: inherit;
+  font-weight: inherit;
   font-size: inherit;
   text-transform: uppercase;
 
@@ -30,7 +35,6 @@ export const Button = styled.button`
 
   border-radius: inherit;
   background: transparent;
-  // background: ${vars.colors.bgWithOpacityPrimary};
   border: none;
 
   cursor: pointer;
@@ -38,5 +42,11 @@ export const Button = styled.button`
   &:hover,
   &:focus {
     color: ${vars.colors.whiteText};
+    text-decoration: underline;
+  }
+
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
+    width: 80px;
+    height: 80px;
   }
 `;

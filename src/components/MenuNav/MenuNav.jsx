@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
-// import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from 'react-responsive';
 
-import ModalBurgerMenu from 'components/ModalBurgerMenu';
 import MenuNavList from 'components/MenuNavList';
+import MenuMobile from 'components/MenuMobile';
 
-// import { variables } from 'stylesheet/variables';
+import { vars } from 'stylesheet/variables';
 
 import * as s from './MenuNav.styled';
 
@@ -13,30 +13,24 @@ const MenuNav = () => {
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
   // const isMobile = useMediaQuery({
-  //   query: `(max-width: ${variables.breakpoints.mobileMax})`,
+  //   query: `(max-width: ${vars.breakpoints.tablet} - 1px)`,
   // });
 
+  const isMobile = useMediaQuery({
+    query: `(max-width: ${vars.breakpoints.mobileMax})`,
+  });
+
   useEffect(() => {
-    const autoResize = () => {
-      setShowBurgerMenu(window.innerWidth <= 768);
-    };
-
-    autoResize();
-
-    window.addEventListener('resize', autoResize);
-
-    return () => {
-      window.removeEventListener('resize', autoResize);
-    };
-  }, []);
+    setShowBurgerMenu(isMobile);
+  }, [isMobile]);
 
   const handleClickOpenNavMenu = () => {
     setIsOpenNavMenu(prevState => !prevState);
-    // if (!isOpenNavMenu) {
-    //   document.body.style.overflow = 'hidden';
-    // } else {
-    //   document.body.style.overflow = 'auto';
-    // }
+    if (!isOpenNavMenu) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
   };
 
   return (
@@ -46,9 +40,9 @@ const MenuNav = () => {
       </s.Button>
       {isOpenNavMenu ? (
         showBurgerMenu ? (
-          <ModalBurgerMenu onClose={handleClickOpenNavMenu} />
+          <MenuMobile onClose={handleClickOpenNavMenu} />
         ) : (
-          <MenuNavList />
+          <MenuNavList type="header" onClose={handleClickOpenNavMenu} />
         )
       ) : null}
     </s.Container>

@@ -5,13 +5,11 @@ html {
 }
 
 body {
-  margin: 0;
-
   background-color: #181818;
 
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
   line-height: 1.16em;
 
   font-family: 'Messina Sans Mono', 'Right Grotesk', 'Biro Script Plus',

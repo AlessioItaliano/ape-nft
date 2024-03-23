@@ -29,14 +29,3 @@ export const Header = styled.header`
     max-width: 1280px;
   }
 `;
-
-export const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 48px;
-  height: 48px;
-
-  color: ${vars.colors.whiteText};
-`;
