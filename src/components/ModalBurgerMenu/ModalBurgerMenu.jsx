@@ -54,29 +54,29 @@ const ModalBurgerMenu = ({ onClose }) => {
           <s.Nav>
             <s.List>
               <s.Item>
-                <s.AnhorLink href="#about" onClick={onClose}>
+                <AnchorLink href="#about" onClick={onClose}>
                   About
-                </s.AnhorLink>
+                </AnchorLink>
               </s.Item>
               <s.Item>
-                <s.AnhorLink href="#m-map" onClick={onClose}>
+                <AnchorLink href="#m-map" onClick={onClose}>
                   M-map
-                </s.AnhorLink>
+                </AnchorLink>
               </s.Item>
               <s.Item>
-                <s.AnhorLink href="#faq" onClick={onClose}>
+                <AnchorLink href="#faq" onClick={onClose}>
                   Faq
-                </s.AnhorLink>
+                </AnchorLink>
               </s.Item>
               <s.Item>
-                <s.AnhorLink href="#arts" onClick={onClose}>
+                <AnchorLink href="#arts" onClick={onClose}>
                   Arts
-                </s.AnhorLink>
+                </AnchorLink>
               </s.Item>
               <s.Item>
-                <s.AnhorLink href="#mint" onClick={onClose}>
+                <AnchorLink href="#mint" onClick={onClose}>
                   Mint
-                </s.AnhorLink>
+                </AnchorLink>
               </s.Item>
             </s.List>
           </s.Nav>

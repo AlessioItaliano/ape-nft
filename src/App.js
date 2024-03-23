@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Header from 'components/Header';
 import Hero from 'components/Hero';
 
@@ -21,32 +19,32 @@ const App = () => {
       <Header />
       <Hero />
 
-      <Section anhorId="about">
+      <Section anchorId="about">
         <Container>
           <AboutUs />
         </Container>
         <Banner />
       </Section>
 
-      <Section anhorId="m-map">
+      <Section anchorId="m-map">
         <Container>
           <MindMap />
         </Container>
       </Section>
 
-      <Section anhorId="faq">
+      <Section anchorId="faq">
         <Container>
           <Faq />
         </Container>
       </Section>
 
-      <Section anhorId="arts">
+      <Section anchorId="arts">
         <Container>
           <Collection />
         </Container>
       </Section>
 
-      <Section anhorId="mint">
+      <Section anchorId="mint">
         <Container>
           <Mint />
         </Container>

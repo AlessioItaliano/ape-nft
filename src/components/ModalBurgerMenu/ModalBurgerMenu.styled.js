@@ -105,7 +105,7 @@ export const List = styled.ul`
 
 export const Item = styled.li``;
 
-export const AnhorLink = styled.a`
+export const AnchorLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;

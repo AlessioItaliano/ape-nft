@@ -12,10 +12,10 @@ import { validationSchema } from 'helpers/schema';
 import * as s from './MintForm.styled';
 
 const MintForm = () => {
-  const [isSubmited, setIsSubmited] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleSubmit = (values, { resetForm }) => {
-    setIsSubmited(true);
+    setIsSubmitted(true);
     const user = values.username.trim().replace('@', '');
     const wallet = values.walletAddress.trim();
 
@@ -26,7 +26,7 @@ NFT is on the way to your wallet ${wallet} `,
       'Okay',
       () => {
         resetForm();
-        setIsSubmited(false);
+        setIsSubmitted(false);
       }
     );
   };
@@ -83,7 +83,7 @@ NFT is on the way to your wallet ${wallet} `,
           <Button
             type="submit"
             name={
-              isSubmited
+              isSubmitted
                 ? Object.keys(errors).length > 0
                   ? 'ERROR'
                   : 'MINTED'

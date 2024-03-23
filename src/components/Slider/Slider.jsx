@@ -49,7 +49,7 @@ const Slider = ({ data, children }) => {
         <s.Item key={index}>{React.cloneElement(children, { item })}</s.Item>
       ))}
       <s.ButtonContainer>
-        <s.SliderButton onClick={clickPrev} aria-label="Previes slide">
+        <s.SliderButton onClick={clickPrev} aria-label="Previous slide">
           Prev
         </s.SliderButton>
         <s.SliderButton onClick={clickNext} aria-label="Next slide">
