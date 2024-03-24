@@ -2,6 +2,37 @@ import styled from 'styled-components';
 
 import { vars } from 'stylesheet/variables';
 
+// const animeOpen = keyframes`
+//   0% {
+//     opacity: 0;
+//     transform: translateZ(-100%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateZ(0);
+//   }
+// `;
+
+// const animeClose = keyframes`
+//   0% {
+//     opacity: 1;
+//     transform: translateZ(0);
+//   }
+//   100% {
+//     opacity: 0;
+//     transform: translateZ(50%);
+//   }
+// `;
+
+// ${props =>
+//   props.showMenu
+//     ? css`
+//         animation: ${animeOpen} 500ms ease-in-out;
+//       `
+//     : css`
+//         animation: ${animeClose} 500ms ease-in-out;
+//       `};
+
 export const Container = styled.div`
   display: flex;
   flex-direction: row-reverse;
@@ -12,6 +43,10 @@ export const Container = styled.div`
   backdrop-filter: ${vars.filters.blur};
 
   font-weight: 600;
+
+  @media screen and (min-width: ${vars.breakpoints.tablet}) {
+    border-radius: 12px;
+  }
 
   @media screen and (min-width: ${vars.breakpoints.desktop}) {
     font-size: 16px;

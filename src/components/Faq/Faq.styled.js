@@ -20,7 +20,6 @@ export const List = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 8px;
 `;
 
 export const Item = styled.li`

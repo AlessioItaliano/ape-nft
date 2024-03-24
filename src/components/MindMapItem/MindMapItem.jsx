@@ -7,12 +7,12 @@ const MindMapItem = ({ item }) => {
     if (item.type === 'link') {
       return (
         <a href={item.link} rel="noopener noreferrer nofollow">
-          <s.LinkContainer>
+          <s.Container type="link">
             <s.IconContainer>
               <ArrowIcon />
             </s.IconContainer>
             <s.Title>{item.title}</s.Title>
-          </s.LinkContainer>
+          </s.Container>
         </a>
       );
     } else {

@@ -32,14 +32,16 @@ export const Link = styled.a`
       : vars.colors.bgWithOpacitySecondary};
 
   border-radius: 8px;
-  // fill: ${vars.colors.blackText};
-  // background: ${vars.colors.bgWithOpacityPrimary};
   backdrop-filter: ${vars.filters.blur};
 
   &:hover,
   &:focus {
     fill: ${props =>
       props.theme === 'dark' ? vars.colors.whiteText : vars.colors.redText};
+  }
+
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
+    border-radius: 12px;
   }
 
   @media screen and (min-width: ${vars.breakpoints.desktop}) {

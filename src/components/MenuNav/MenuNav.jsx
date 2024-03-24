@@ -12,10 +12,6 @@ const MenuNav = () => {
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
-  // const isMobile = useMediaQuery({
-  //   query: `(max-width: ${vars.breakpoints.tablet} - 1px)`,
-  // });
-
   const isMobile = useMediaQuery({
     query: `(max-width: ${vars.breakpoints.mobileMax})`,
   });
@@ -26,7 +22,7 @@ const MenuNav = () => {
 
   const handleClickOpenNavMenu = () => {
     setIsOpenNavMenu(prevState => !prevState);
-    if (!isOpenNavMenu) {
+    if (!isOpenNavMenu && showBurgerMenu) {
       document.body.style.overflow = 'hidden';
     } else {
       document.body.style.overflow = 'auto';

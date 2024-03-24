@@ -1,6 +1,5 @@
 import { createPortal } from 'react-dom';
 
-import Container from 'components/Container';
 import HeaderLogo from 'components/HeaderLogo';
 import CopyRight from 'components/CopyRight';
 import MenuSocialLinks from 'components/MenuSocialLinks';
@@ -13,23 +12,24 @@ const BurgerMenuRoot = document.getElementById('MenuBurger');
 const MenuMobile = ({ onClose }) => {
   return createPortal(
     <s.Field>
-      <s.MainContainer>
-        <HeaderLogo theme="light" />
+      <s.Container>
+        <s.ContainerHeader>
+          <HeaderLogo theme="light" />
 
-        <s.LinksContainer>
-          <s.CloseButton onClick={onClose} aria-label="Close mobile menu">
-            Close
-          </s.CloseButton>
-          <MenuSocialLinks theme="light" />
-        </s.LinksContainer>
-      </s.MainContainer>
+          <s.LinksContainer>
+            <s.CloseButton onClick={onClose} aria-label="Close mobile menu">
+              Close
+            </s.CloseButton>
+            <MenuSocialLinks theme="light" />
+          </s.LinksContainer>
+        </s.ContainerHeader>
 
-      <Container>
-        <s.NavContainer>
-          <MenuNavList type="mobile" onClose={onClose} />
+        <MenuNavList type="mobile" onClose={onClose} />
+
+        <s.ContainerFooter>
           <CopyRight />
-        </s.NavContainer>
-      </Container>
+        </s.ContainerFooter>
+      </s.Container>
     </s.Field>,
 
     BurgerMenuRoot

@@ -5,15 +5,21 @@ import { vars } from 'stylesheet/variables';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: ${props =>
+    props.type === 'link' ? 'end' : 'space-between'};
   align-items: flex-start;
+
+  position: relative;
+  white-space: pre-wrap;
+  box-sizing: border-box;
 
   width: 216px;
   height: 242px;
   padding: 24px 12px;
 
   border-radius: 12px;
-  background: ${vars.colors.bgTertiary};
+  background: ${props =>
+    props.type === 'link' ? vars.colors.bgSecondary : vars.colors.bgTertiary};
 
   @media screen and (min-width: ${vars.breakpoints.tablet}) {
     width: 100%;
@@ -51,30 +57,31 @@ export const Description = styled.p`
   }
 `;
 
-export const LinkContainer = styled.div`
-  display: flex;
-  align-items: flex-end;
-  position: relative;
-  white-space: pre-wrap;
+// export const LinkContainer = styled.div`
+//   display: flex;
+//   align-items: flex-end;
+//   position: relative;
+//   white-space: pre-wrap;
+//   box-sizing: border-box;
 
-  width: 100%;
-  min-width: 206px;
-  height: 242px;
-  padding: 24px 12px;
-  border-radius: 12px;
+//   // width: 100%;
+//   min-width: 206px;
+//   // height: 242px;
+//   padding: 24px 12px;
+//   border-radius: 12px;
 
-  background: ${vars.colors.bgSecondary};
+//   background: ${vars.colors.bgSecondary};
 
-  @media screen and (min-width: ${vars.breakpoints.tablet}) {
-    border-radius: 16px;
-    padding: 24px;
-  }
+//   @media screen and (min-width: ${vars.breakpoints.tablet}) {
+//     border-radius: 16px;
+//     padding: 24px;
+//   }
 
-  @media screen and (min-width: ${vars.breakpoints.desktop}) {
-    border-radius: 24px;
-    height: 480px;
-  }
-`;
+//   @media screen and (min-width: ${vars.breakpoints.desktop}) {
+//     border-radius: 24px;
+//     height: 480px;
+//   }
+// `;
 
 export const IconContainer = styled.div`
   position: absolute;
@@ -88,7 +95,7 @@ export const IconContainer = styled.div`
 
   fill: ${vars.colors.whiteText};
 
-  ${LinkContainer}:hover & {
+  ${Container}:hover & {
     top: 12px;
     right: 12px;
 

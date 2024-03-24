@@ -21,8 +21,7 @@ const MintForm = () => {
 
     Report.success(
       `Dear ${user}`,
-      `Welcome to the community!
-NFT is on the way to your wallet ${wallet} `,
+      `Welcome to the community! NFT is on the way to your wallet ${wallet} `,
       'Okay',
       () => {
         resetForm();

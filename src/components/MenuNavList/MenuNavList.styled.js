@@ -2,18 +2,39 @@ import styled from 'styled-components';
 
 import { vars } from 'stylesheet/variables';
 
+// const animeOpen = keyframes`
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-100%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// `;
+
+// const animeClose = keyframes`
+//   0% {
+//     opacity: 0;
+//     transform: translateY(-100%);
+//   }
+//   100% {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// `;
+
 export const List = styled.ul`
   display: flex;
-  // flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-direction: ${props => (props.type === 'header' ? 'row' : 'column')};
+
   width: 100%;
   height: 100%;
-  justify-content: center;
-  //  ${props => (props.type === 'header' ? null : 'center')};
-  align-items: center;
-  ${props => (props.type === 'header' ? null : 'center')};
-  gap: ${props => (props.type === 'header' ? null : '16px')};
+  transition: translateZ(100%) 0.5s ease-in-out;
 
-  flex-direction: ${props => (props.type === 'header' ? 'row' : 'column')};
+  gap: ${props => (props.type === 'header' ? null : '16px')};
 `;
 
 export const Link = styled.a`
@@ -28,17 +49,23 @@ export const Link = styled.a`
   font-weight: ${props => (props.type === 'header' ? 'inherit' : '600')};
   line-height: ${props => (props.type === 'header' ? 'inherit' : '1.2em')};
 
-  width: ${props => (props.type === 'header' ? 'inherit' : null)};
-  height: ${props => (props.type === 'header' ? 'inherit' : null)};
+  width: ${props => (props.type === 'header' ? '48px' : null)};
+  height: ${props => (props.type === 'header' ? '48px' : null)};
   padding: ${props => (props.type === 'header' ? '10px' : null)};
 
   color: ${props =>
     props.type === 'header' ? 'inherit' : vars.colors.whiteText};
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: ${props =>
       props.type === 'header' ? vars.colors.whiteText : vars.colors.redText};
     text-decoration: ${props => (props.type === 'header' ? 'underline' : null)};
+  }
+
+  @media screen and (min-width: ${vars.breakpoints.desktop}) {
+    width: ${props => (props.type === 'header' ? '80px' : null)};
+    height: ${props => (props.type === 'header' ? '80px' : null)};
   }
 `;
