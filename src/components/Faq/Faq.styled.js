@@ -75,7 +75,8 @@ export const Item = styled.li`
   }
 
   &:focus,
-  &:hover {
+  &:hover,
+  &:active {
     color: ${vars.colors.redText};
   }
 
@@ -105,7 +106,8 @@ export const Item = styled.li`
   }
 
   &:focus::before,
-  &:hover::before {
+  &:hover::before,
+  &:active::before{
     color: ${vars.colors.whiteText};
   }
 

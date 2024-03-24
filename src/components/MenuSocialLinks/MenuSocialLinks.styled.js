@@ -35,7 +35,8 @@ export const Link = styled.a`
   backdrop-filter: ${vars.filters.blur};
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     fill: ${props =>
       props.theme === 'dark' ? vars.colors.whiteText : vars.colors.redText};
   }

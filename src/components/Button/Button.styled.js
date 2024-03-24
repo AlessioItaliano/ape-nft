@@ -27,7 +27,8 @@ export const Button = styled.button`
   text-transform: uppercase;
 
   &:focus,
-  &:hover {
+  &:hover,
+  &:active {
     color: ${vars.colors.blackText};
   }
 

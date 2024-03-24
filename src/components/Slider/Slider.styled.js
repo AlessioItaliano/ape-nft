@@ -42,7 +42,9 @@ export const SliderButton = styled.button`
 
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:active,
+  &:focus {
     color: ${vars.colors.redText};
   }
 `;

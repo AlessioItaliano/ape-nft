@@ -1,8 +1,6 @@
-// import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 import { vars } from '../../stylesheet/variables';
-
-import styled, { keyframes } from 'styled-components';
 
 const anime = keyframes`
   0% {
@@ -26,7 +24,7 @@ export const Field = styled.div`
 
   padding: 62px 16px 24px 16px;
   background: ${vars.colors.bgMain};
-  animation: ${anime} 500ms ease-in-out;
+  animation: ${anime} 0.5s ease-in-out forwards;
 `;
 
 export const Container = styled.div`
@@ -88,4 +86,6 @@ export const LinksContainer = styled.div`
 export const ContainerFooter = styled.div`
   position: absolute;
   bottom: 0;
+
+  max-width: 216px;
 `;

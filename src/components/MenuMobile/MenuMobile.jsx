@@ -9,7 +9,7 @@ import * as s from './MenuMobile.styled';
 
 const BurgerMenuRoot = document.getElementById('MenuBurger');
 
-const MenuMobile = ({ onClose }) => {
+const MenuMobile = ({ onClose}) => {
   return createPortal(
     <s.Field>
       <s.Container>

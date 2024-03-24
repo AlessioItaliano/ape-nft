@@ -20,7 +20,7 @@ const MenuNav = () => {
     setShowBurgerMenu(isMobile);
   }, [isMobile]);
 
-  const handleClickOpenNavMenu = () => {
+  const handleOpenMenu = () => {
     setIsOpenNavMenu(prevState => !prevState);
     if (!isOpenNavMenu && showBurgerMenu) {
       document.body.style.overflow = 'hidden';
@@ -31,14 +31,14 @@ const MenuNav = () => {
 
   return (
     <s.Container>
-      <s.Button type="button" onClick={handleClickOpenNavMenu}>
+      <s.Button type="button" onClick={handleOpenMenu}>
         {!isOpenNavMenu ? 'Menu' : 'Close'}
       </s.Button>
       {isOpenNavMenu ? (
         showBurgerMenu ? (
-          <MenuMobile onClose={handleClickOpenNavMenu} />
+          <MenuMobile onClose={handleOpenMenu}  />
         ) : (
-          <MenuNavList type="header" onClose={handleClickOpenNavMenu} />
+          <MenuNavList type="header" onClose={handleOpenMenu} />
         )
       ) : null}
     </s.Container>

@@ -14,7 +14,8 @@ export const Box = styled.div`
     props.theme === 'dark' ? vars.colors.blackText : vars.colors.whiteText};
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active{
     fill: ${props =>
       props.theme === 'dark' ? vars.colors.whiteText : vars.colors.redText};
   }

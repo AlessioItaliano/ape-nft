@@ -225,7 +225,8 @@ export const HeroButton = styled.a`
   text-transform: uppercase;
 
   &:focus,
-  &:hover {
+  &:hove,,
+  &:active {
     color: ${vars.colors.whiteText};
   }
 
