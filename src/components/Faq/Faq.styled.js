@@ -20,6 +20,12 @@ export const List = styled.ul`
   list-style-type: none;
   display: flex;
   flex-direction: column;
+
+  max-width: 216px;
+
+  @media screen and (min-width: ${vars.breakpoints.tablet}) {
+    min-width: 100%;
+  }
 `;
 
 export const Item = styled.li`
@@ -34,14 +40,38 @@ export const Item = styled.li`
 
   color: ${vars.colors.whiteText};
 
+  &:first-child {
+    padding: 0 8px 10px 8px;
+  }
+
+  &:last-child {
+    padding: 8px 8px 0 8px;
+  }
+
   @media screen and (min-width: ${vars.breakpoints.tablet}) {
     padding: 18px 16px 23px 180px;
     gap: 21px;
+
+    &:first-child {
+      padding: 0 16px 23px 180px;
+    }
+
+    &:last-child {
+      padding: 18px 16px 0 180px;
+    }
   }
 
   @media screen and (min-width: ${vars.breakpoints.desktop}) {
     padding: 24px 24px 24px 296px;
     gap: 27px;
+
+    &:first-child {
+      padding: 0 24px 24px 296px;
+    }
+
+    &:last-child {
+      padding: 24px 24px 0 296px;
+    }
   }
 
   &:focus,
@@ -83,6 +113,35 @@ export const Item = styled.li`
     props.$active &&
     `
     border-radius: 12px;
+
+     &:first-child {
+      padding-top: 8px
+    }
+
+    &:last-child {
+      padding-bottom: 10px;
+    }
+
+      @media screen and (min-width: ${vars.breakpoints.tablet}) {
+        &:first-child {
+          padding-top: 8px
+        }
+        &:last-child {
+          padding-bottom: 10px;
+        }
+
+    padding: 18px 16px 23px 180px !important;
+  }
+
+      @media screen and (min-width: ${vars.breakpoints.desktop}) {
+        &:first-child {
+          padding-top: 8px
+        }
+        &:last-child {
+          padding-bottom: 10px;
+        }
+    padding: 24px 24px 24px 296px !important; 
+  }
 
     color: ${vars.colors.redText};
     background-color: ${vars.colors.bgTertiary};
