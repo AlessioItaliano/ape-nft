@@ -2,7 +2,7 @@
 
 Gretings and welcome on my news website!
 
-![MainSection](https://github.com/AlessioItaliano/ape-nft/blob/main/public/readme/MainSection.png)
+![HeroSection](https://github.com/AlessioItaliano/ape-nft/blob/main/public/readme/HeroSection.png)
 
 # About Website
 
