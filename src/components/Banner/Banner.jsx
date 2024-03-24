@@ -9,7 +9,7 @@ const Banner = () => {
   useEffect(() => {
     anime({
       targets: '#bannerText',
-      translateX: ['-60%', '60%'],
+      translateX: ['100%', '-100%'],
       duration: 20000,
       easing: 'linear',
       loop: true,

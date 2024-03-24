@@ -43,9 +43,7 @@ export const Button = styled.button`
 
   cursor: pointer;
 
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover{
     color: ${vars.colors.whiteText};
     text-decoration: underline;
   }

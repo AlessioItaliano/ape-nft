@@ -16,7 +16,7 @@ const MintForm = () => {
 
   const handleSubmit = (values, { resetForm }) => {
     setIsSubmitted(true);
-    const user = values.username.trim().replace('@', '');
+    const user = values.userName.trim().replace('@', '');
     const wallet = values.walletAddress.trim();
 
     Report.success(
@@ -33,13 +33,13 @@ const MintForm = () => {
   return (
     <Formik
       initialValues={{
-        username: '',
+        userName: '',
         walletAddress: '',
       }}
       validationSchema={validationSchema}
       onSubmit={handleSubmit}
     >
-      {({ errors, touched }) => (
+      {({ errors, touched, isValid }) => (
         <s.Forma autoComplete="off">
           <s.Container>
             <s.IconContainer>
@@ -49,12 +49,12 @@ const MintForm = () => {
             </s.IconContainer>
 
             <s.Input
-              name="username"
+              name="userName"
               placeholder="@username"
-              error={errors.username && touched.username ? 'true' : undefined}
+              error={errors.userName && touched.userName ? 'true' : undefined}
             />
-            {errors.username && touched.username ? (
-              <s.Error name="username" component="div" />
+            {errors.userName && touched.userName ? (
+              <s.Error name="userName" component="div" />
             ) : null}
           </s.Container>
 
@@ -81,13 +81,8 @@ const MintForm = () => {
 
           <Button
             type="submit"
-            name={
-              isSubmitted
-                ? Object.keys(errors).length > 0
-                  ? 'ERROR'
-                  : 'MINTED'
-                : 'MINT'
-            }
+            disabled={!isValid}
+            name={!isSubmitted ? (!isValid ? 'ERROR' : 'MINT') : 'MINTED'}
           />
         </s.Forma>
       )}

@@ -32,6 +32,12 @@ export const Button = styled.button`
     color: ${vars.colors.blackText};
   }
 
+  &:disabled {
+    background: ${vars.colors.bgSecondary};
+    color: ${vars.colors.whiteText};
+    cursor: not-allowed;
+  }
+
   @media screen and (min-width: ${vars.breakpoints.tablet}) {
     padding: 10px 107px 12px 107px;
   }

@@ -78,14 +78,14 @@ export const CloseButton = styled.button`
 export const LinksContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 8px;
   justify-content: flex-end;
   align-items: flex-end;
+
+  gap: 8px;
 `;
 
 export const ContainerFooter = styled.div`
   position: absolute;
   bottom: 0;
-
   max-width: 216px;
 `;

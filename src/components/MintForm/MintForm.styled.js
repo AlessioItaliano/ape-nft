@@ -90,6 +90,11 @@ export const Input = styled(Field)`
     color: ${vars.colors.placeholder};
   }
 
+  &:not(:placeholder-shown) {
+    border-color: ${props =>
+      props.error ? vars.colors.redText : vars.colors.whiteText};
+  }
+
   &:hover,
   &:focus,
   &:active {

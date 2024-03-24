@@ -1,7 +1,7 @@
 import * as yup from 'yup';
 
 export const validationSchema = yup.object().shape({
-  username: yup
+  userName: yup
     .string()
     .transform(value => value.trim())
     .min(3, 'At least 3 characters')
@@ -13,7 +13,7 @@ export const validationSchema = yup.object().shape({
     .length(19, 'Must be exactly 19 characters')
     .matches(
       /^[a-zA-Z0-9]+$/,
-      'Wallet address must contain only letters and digits'
+      'Only letters and digits'
     )
     .required('Wrong address'),
 });
