@@ -35,6 +35,13 @@ accessible menu and links to the company's accounts on various platforms.
 Simply type in the [link](https://alessioitaliano.github.io/ape-nft/), and let
 the magic unfold.
 
+# Lighthouse report
+
+![LighthouseReport](https://github.com/AlessioItaliano/ape-nft/blob/main/public/readme/LighthouseReport.png)
+
+The website demonstrates excellent performance metrics when tested on the
+Lighthouse report.
+
 # Used technologies
 
 This project was bootstrapped with
