@@ -8,7 +8,7 @@ import { vars } from 'stylesheet/variables';
 
 import * as s from './MenuNav.styled';
 
-const MenuNav = () => {
+const MenuNav = ({ theme }) => {
   const [isOpenNavMenu, setIsOpenNavMenu] = useState(false);
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
@@ -30,15 +30,15 @@ const MenuNav = () => {
   };
 
   return (
-    <s.Container>
-      <s.Button type="button" onClick={handleOpenMenu}>
+    <s.Container theme={theme}>
+      <s.Button type="button" theme={theme} onClick={handleOpenMenu}>
         {!isOpenNavMenu ? 'Menu' : 'Close'}
       </s.Button>
       {isOpenNavMenu ? (
         showBurgerMenu ? (
-          <MenuMobile onClose={handleOpenMenu}  />
+          <MenuMobile onClose={handleOpenMenu} />
         ) : (
-          <MenuNavList type="header" onClose={handleOpenMenu} />
+          <MenuNavList type="header" theme={theme} onClose={handleOpenMenu} />
         )
       ) : null}
     </s.Container>

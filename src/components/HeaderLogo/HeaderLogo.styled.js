@@ -1,5 +1,10 @@
 import styled from 'styled-components';
-import { vars } from '../../stylesheet/variables';
+
+import { vars } from 'stylesheet/variables';
+
+export const Link = styled.a`
+  display: ${props => (props.$scrolled ? 'none' : 'block')};
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -15,7 +20,7 @@ export const Box = styled.div`
 
   &:hover,
   &:focus,
-  &:active{
+  &:active {
     fill: ${props =>
       props.theme === 'dark' ? vars.colors.whiteText : vars.colors.redText};
   }

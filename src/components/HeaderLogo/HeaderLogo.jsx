@@ -2,9 +2,10 @@ import { ReactComponent as LogoIcon } from 'icons/logoMain.svg';
 
 import * as s from './HeaderLogo.styled';
 
-const HeaderLogo = ({ theme }) => {
+const HeaderLogo = ({ theme, $scrolled }) => {
   return (
-    <a
+    <s.Link
+      $scrolled={$scrolled}
       href="https://alessioitaliano.github.io/ape-nft/"
       rel="noopener noreferrer nofollow"
       aria-label="Company logo"
@@ -14,7 +15,7 @@ const HeaderLogo = ({ theme }) => {
           <LogoIcon />
         </s.Box>
       </s.Container>
-    </a>
+    </s.Link>
   );
 };
 

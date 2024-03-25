@@ -10,7 +10,7 @@ const Banner = () => {
     anime({
       targets: '#bannerText',
       translateX: ['100%', '-100%'],
-      duration: 20000,
+      duration: 40000,
       easing: 'linear',
       loop: true,
     });

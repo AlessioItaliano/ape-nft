@@ -74,7 +74,7 @@ export const TitleContainer = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-family: ${vars.fonts.grotesk};
   font-size: 44px;
   font-weight: 900;
@@ -225,7 +225,8 @@ export const HeroButton = styled.a`
   text-transform: uppercase;
 
   &:focus,
-  &:hove,,
+  &:hove,
+  ,
   &:active {
     color: ${vars.colors.whiteText};
   }

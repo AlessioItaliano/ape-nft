@@ -7,8 +7,14 @@ export const Container = styled.div`
   flex-direction: row-reverse;
 
   border-radius: 8px;
-  background: ${vars.colors.bgWithOpacityPrimary};
-  color: ${vars.colors.blackText};
+
+  color: ${props =>
+    props.theme === 'dark' ? vars.colors.blackText : vars.colors.whiteText};
+  background: ${props =>
+    props.theme === 'dark'
+      ? vars.colors.bgWithOpacityPrimary
+      : vars.colors.bgWithOpacitySecondary};
+
   backdrop-filter: ${vars.filters.blur};
 
   font-weight: 600;
@@ -38,13 +44,16 @@ export const Button = styled.button`
   padding: 10px;
 
   border-radius: inherit;
+  color: inherit;
   background: transparent;
   border: none;
 
   cursor: pointer;
 
-  &:hover{
-    color: ${vars.colors.whiteText};
+  &:hover,
+  &:active {
+    color: ${props =>
+      props.theme === 'dark' ? vars.colors.whiteText : vars.colors.redText};
     text-decoration: underline;
   }
 

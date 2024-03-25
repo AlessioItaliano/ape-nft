@@ -2,28 +2,6 @@ import styled from 'styled-components';
 
 import { vars } from 'stylesheet/variables';
 
-// const animeOpen = keyframes`
-//   0% {
-//     opacity: 0;
-//     transform: translateY(-100%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// `;
-
-// const animeClose = keyframes`
-//   0% {
-//     opacity: 0;
-//     transform: translateY(-100%);
-//   }
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// `;
-
 export const List = styled.ul`
   display: flex;
   justify-content: center;
@@ -60,7 +38,9 @@ export const Link = styled.a`
   &:focus,
   &:active {
     color: ${props =>
-      props.type === 'header' ? vars.colors.whiteText : vars.colors.redText};
+      props.type === 'header' && props.theme === 'dark'
+        ? vars.colors.whiteText
+        : vars.colors.redText};
     text-decoration: ${props => (props.type === 'header' ? 'underline' : null)};
   }
 
