@@ -113,13 +113,11 @@ export const SecondDescriptionContainer = styled.div`
   @media screen and (min-width: ${vars.breakpoints.tablet}) {
     gap: 24px;
     width: 269px;
-    // margin-bottom: 36px;
   }
 
   @media screen and (min-width: ${vars.breakpoints.desktop}) {
     gap: 36px;
     width: 417px;
-    // margin-bottom: 40px;
   }
 `;
 

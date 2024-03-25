@@ -57,32 +57,6 @@ export const Description = styled.p`
   }
 `;
 
-// export const LinkContainer = styled.div`
-//   display: flex;
-//   align-items: flex-end;
-//   position: relative;
-//   white-space: pre-wrap;
-//   box-sizing: border-box;
-
-//   // width: 100%;
-//   min-width: 206px;
-//   // height: 242px;
-//   padding: 24px 12px;
-//   border-radius: 12px;
-
-//   background: ${vars.colors.bgSecondary};
-
-//   @media screen and (min-width: ${vars.breakpoints.tablet}) {
-//     border-radius: 16px;
-//     padding: 24px;
-//   }
-
-//   @media screen and (min-width: ${vars.breakpoints.desktop}) {
-//     border-radius: 24px;
-//     height: 480px;
-//   }
-// `;
-
 export const IconContainer = styled.div`
   position: absolute;
   top: 18px;
